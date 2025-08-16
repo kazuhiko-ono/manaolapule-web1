@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="インタラクティブ読書法研修｜読むから対話するへ、知識から智慧への変革的読書技術を習得">
+    <meta name="keywords" content="読書法,インタラクティブ読書,研修,toiee Lab,学習,成長,マナオラプレ">
+    <meta property="og:title" content="インタラクティブ読書法研修 - 読むから、対話するへ。知識から、智慧へ。">
+    <meta property="og:description" content="受動的な読書から能動的な対話へ。知識の蓄積から智慧の創造へと読書を変革する技術を習得">
+    <meta property="og:image" content="/assets/images/reading-og.jpg">
+    <title>インタラクティブ読書法研修 - 読むから、対話するへ。知識から、智慧へ。 | マナオラプレ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'noto': ['Noto Sans JP', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-noto bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">マナオラプレ</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-600 hover:text-cyan-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-cyan-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-cyan-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-cyan-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-cyan-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-cyan-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-cyan-600 transition-colors">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="../index.html" class="text-gray-600 hover:text-cyan-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-cyan-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-cyan-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-cyan-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-cyan-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-cyan-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-cyan-600 transition-colors">お問い合わせ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <div class="inline-flex items-center bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i data-lucide="book-open" class="w-4 h-4 mr-2"></i>
+                    2日間集中型研修
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+                    <span class="block text-cyan-600">読むから、対話するへ。</span>
+                    <span class="block text-blue-600">知識から、智慧へ。</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    受動的な読書から能動的な対話へ。<br>
+                    知識の蓄積から智慧の創造へと読書を変革しませんか？
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#booking" class="bg-cyan-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg">
+                        今すぐ申し込む
+                    </a>
+                    <a href="#details" class="border border-cyan-600 text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-50 transition-colors">
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white" id="details">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        なぜインタラクティブ読書なのか？
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        多くの人が本を読んでも知識が身につかない、実践に活かせないと感じています。
+                        従来の受動的読書から、著者との対話、テキストとの交流を通じて深い理解と実践的智慧を得る技術を身につけましょう。
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">読書から対話への転換</h3>
+                        <p class="text-gray-600">
+                            単純な情報の受け取りから、著者との積極的な対話へ。
+                            疑問を持ち、反論し、発展させる読書技術を習得します。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="lightbulb" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">知識から智慧への昇華</h3>
+                        <p class="text-gray-600">
+                            情報の記憶に留まらず、自分の経験と結びつけ、
+                            実践可能な智慧として活用する読書法を身につけます。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="network" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">多層的理解の構築</h3>
+                        <p class="text-gray-600">
+                            表面的理解から深層理解まで、段階的に理解を深め、
+                            複数の視点から内容を捉える技術を身につけます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Objectives -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        学習目標と期待できる成果
+                    </h2>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">能動的読書技術の習得</h3>
+                                <p class="text-gray-600 mb-4">
+                                    受動的に文字を追うのではなく、著者の意図を理解し、批判的に検討し、
+                                    自分なりの解釈を構築する能動的読書技術を身につけます。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        読書速度が2倍になり、理解度と記憶定着率が3倍向上します
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="layers" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">多層読解システム</h3>
+                                <p class="text-gray-600 mb-4">
+                                    表面的内容、論理構造、背景思想、実践的応用まで、
+                                    4つのレベルで文章を分析・理解するシステムを構築します。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        専門書や難解な文章も体系的に理解し、要点を正確に把握できるようになります
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">知識の実践的活用</h3>
+                                <p class="text-gray-600 mb-4">
+                                    読んだ内容を自分の状況に応用し、具体的な行動に移すための
+                                    橋渡し技術を習得します。知識を智慧に変換する技術です。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        読書から得た知識を実際の仕事や生活に活かし、具体的な成果を生み出せるようになります
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        こんな方におすすめ
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">学習意欲の高いビジネスパーソン</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-2 mt-0.5"></i>
+                                本をたくさん読むが身につかない
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-2 mt-0.5"></i>
+                                読書時間を効率化したい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-2 mt-0.5"></i>
+                                専門知識を深く理解したい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">研究者・学習者</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                                文献を効率的に読みたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                                批判的思考力を向上させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2 mt-0.5"></i>
+                                知識を統合する力を身につけたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">教育者・指導者</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-indigo-600 mr-2 mt-0.5"></i>
+                                学習者に読書法を教えたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-indigo-600 mr-2 mt-0.5"></i>
+                                自分の読書力を向上させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-indigo-600 mr-2 mt-0.5"></i>
+                                読書指導のスキルを身につけたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-cyan-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">知的好奇心旺盛な方</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                読書をもっと楽しみたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                深い理解力を身につけたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                知識を創造的に活用したい
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        プログラム構成
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        2日間で読書革命を実現。理論から実践まで体系的に習得
+                    </p>
+                </div>
+                
+                <!-- Day 1 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">1日目：読書技術の基礎構築</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Session 1 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                            <div class="bg-gradient-to-r from-cyan-600 to-blue-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション1：読書パラダイムシフト</h4>
+                                <p class="text-cyan-100">9:30-11:00 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 従来の読書法の限界と問題点</li>
+                                            <li>• インタラクティブ読書の基本理念</li>
+                                            <li>• 読者と著者の対話モデル</li>
+                                            <li>• 読書目的の明確化技術</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 自分の読書習慣の分析</li>
+                                            <li>• 読書目的設定ワーク</li>
+                                            <li>• サンプルテキストでの実験</li>
+                                            <li>• ペアディスカッション</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 2 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション2：多層読解システム</h4>
+                                <p class="text-blue-100">11:15-12:45 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• レベル1：表面的内容の把握</li>
+                                            <li>• レベル2：論理構造の分析</li>
+                                            <li>• レベル3：背景思想の理解</li>
+                                            <li>• レベル4：実践的応用の検討</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 4レベル読解の実践</li>
+                                            <li>• 論理構造マッピング</li>
+                                            <li>• 背景分析ワーク</li>
+                                            <li>• グループ読解比較</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 3 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション3：批判的読書技術</h4>
+                                <p class="text-indigo-100">13:45-15:15 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 批判的思考の基本原則</li>
+                                            <li>• 論証の妥当性評価</li>
+                                            <li>• 前提や偏見の発見方法</li>
+                                            <li>• 対立する視点の検討</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 論証分析エクササイズ</li>
+                                            <li>• 反論・質問生成ワーク</li>
+                                            <li>• 多角的視点検討</li>
+                                            <li>• 批判的対話の実践</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 4 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                            <div class="bg-gradient-to-r from-purple-600 to-cyan-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション4：対話的読書の実践</h4>
+                                <p class="text-purple-100">15:30-17:00 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 著者との仮想対話技術</li>
+                                            <li>• 質問生成のコツ</li>
+                                            <li>• 内的対話の構造化</li>
+                                            <li>• 読書ノートの作成法</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 対話式読書の実践</li>
+                                            <li>• 質問リスト作成</li>
+                                            <li>• 読書ダイアローグ体験</li>
+                                            <li>• 1日目の振り返り</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">2日目：知識の智慧化と実践応用</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Session 5 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                            <div class="bg-gradient-to-r from-cyan-600 to-teal-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション5：知識統合技術</h4>
+                                <p class="text-cyan-100">9:30-11:00 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 複数の情報源の統合方法</li>
+                                            <li>• 知識の構造化技術</li>
+                                            <li>• 概念マップの作成</li>
+                                            <li>• 矛盾する情報の処理</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 複数書籍の統合読書</li>
+                                            <li>• 知識マップ作成</li>
+                                            <li>• 情報統合ワーク</li>
+                                            <li>• 統合発表プレゼン</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 6 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                            <div class="bg-gradient-to-r from-teal-600 to-green-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション6：実践的応用設計</h4>
+                                <p class="text-teal-100">11:15-12:45 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 知識の実践的変換技術</li>
+                                            <li>• 行動プランの設計方法</li>
+                                            <li>• 実践における障害の予測</li>
+                                            <li>• 継続的学習サイクル</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 実践プラン作成</li>
+                                            <li>• 行動目標の設定</li>
+                                            <li>• 障害予測ワーク</li>
+                                            <li>• プラン発表と相互評価</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 7 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="700">
+                            <div class="bg-gradient-to-r from-green-600 to-blue-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション7：読書習慣の革新</h4>
+                                <p class="text-green-100">13:45-15:15 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 効率的読書環境の設計</li>
+                                            <li>• デジタル読書ツールの活用</li>
+                                            <li>• 読書コミュニティの構築</li>
+                                            <li>• 継続的改善システム</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 個人読書システム設計</li>
+                                            <li>• ツール活用計画</li>
+                                            <li>• 読書バディ結成</li>
+                                            <li>• 30日チャレンジ設計</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Session 8 -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="800">
+                            <div class="bg-gradient-to-r from-blue-600 to-cyan-600 p-6">
+                                <h4 class="text-xl font-bold text-white mb-2">セッション8：総合実践と今後の計画</h4>
+                                <p class="text-blue-100">15:30-17:00 (90分)</p>
+                            </div>
+                            <div class="p-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">学習内容</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 学習内容の統合と確認</li>
+                                            <li>• 個人的読書革命プラン</li>
+                                            <li>• 長期的成長戦略</li>
+                                            <li>• 継続サポート体制</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-gray-800 mb-3">実践活動</h5>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li>• 総合読書実践</li>
+                                            <li>• 個人革命宣言作成</li>
+                                            <li>• 最終発表とフィードバック</li>
+                                            <li>• ネットワーキング</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講料金
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        読書革命への投資。一生涯の価値を提供します
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-xl border border-cyan-200" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">個人受講</h3>
+                            <div class="text-4xl font-bold text-cyan-600 mb-2">¥48,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・教材費込み・2日間</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-3"></i>
+                                    <span class="text-gray-700">12時間の集中研修</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-3"></i>
+                                    <span class="text-gray-700">読書技術ツールセット</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-3"></i>
+                                    <span class="text-gray-700">実践用書籍3冊プレゼント</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-3"></i>
+                                    <span class="text-gray-700">60日間オンラインサポート</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-cyan-600 mr-3"></i>
+                                    <span class="text-gray-700">読書会コミュニティ参加権</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-cyan-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-cyan-700 transition-colors block text-center">
+                                個人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">法人受講</h3>
+                            <div class="text-4xl font-bold text-blue-600 mb-2">¥42,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・1名あたり・3名以上</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">個人受講の全内容</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">組織読書文化の構築支援</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">チーム読書会運営指導</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">3ヶ月間メールサポート</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">組織導入フォローアップ</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors block text-center">
+                                法人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        ※ オンライン受講も可能です（料金同額）<br>
+                        ※ 企業研修として出張開催も承ります（別途お見積り）<br>
+                        ※ 受講者限定の継続読書会も開催しています
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講者の声
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        読書革命を体験した方々の変化をご覧ください
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white font-bold">
+                                山
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">山田様</h4>
+                                <p class="text-gray-600 text-sm">IT企業エンジニア・35歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「技術書を読むのが苦痛でしたが、このメソッドで技術書との対話ができるように！
+                            読書速度は2倍、理解度は3倍になりました。新技術のキャッチアップが楽しくなりました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 技術書1冊/月、理解度30％<br>
+                                <strong>After:</strong> 技術書6冊/月、理解度90％
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                                鈴
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">鈴木様</h4>
+                                <p class="text-gray-600 text-sm">大学准教授・42歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「研究のための文献読解が格段に向上。批判的読書技術により、論文の質が大幅に改善し、
+                            国際ジャーナルへの掲載数が2倍になりました。学生への読書指導も変革できました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 表面的な文献理解<br>
+                                <strong>After:</strong> 深層的批判的分析能力を獲得
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                                佐
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">佐々木様</h4>
+                                <p class="text-gray-600 text-sm">経営コンサルタント・38歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「ビジネス書から実践的な智慧を抽出する技術が身につきました。
+                            クライアントへの提案の質が向上し、成約率が40％アップ。読書がビジネスの武器になりました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 読書と実務の分離<br>
+                                <strong>After:</strong> 読書を直接ビジネスに活用
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        よくある質問
+                    </h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">読書が苦手でも効果はありますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                むしろ読書が苦手な方にこそ効果的です。従来の読書に対する固定観念を変え、
+                                新しいアプローチで読書を楽しく、実践的なものに変革できます。参加者の8割が読書苦手な方です。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">どのようなジャンルの本に応用できますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                ビジネス書、専門書、学術書、小説、自己啓発書など、あらゆるジャンルに適用可能です。
+                                ジャンルに応じた読み方の違いも詳しく解説し、実践的に習得していただけます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">デジタル書籍でも同じ効果がありますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                はい、紙の本とデジタル書籍両方に対応した技術をお教えします。
+                                デジタル特有の機能（検索、ハイライト、メモ機能等）を活用した高度な読書法も習得できます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-808">2日間で本当に読書習慣が変わりますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                2日間で基本技術は完全に習得できます。習慣の定着には継続が必要ですが、
+                                60日間のフォローアップと読書会コミュニティで確実な習慣化をサポートします。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="500">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">受講後のサポート内容について教えてください</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                60日間のメール相談、月2回のオンライン読書会、実践記録シートのフィードバック、
+                                読書コミュニティでの情報交換、困った時の個別相談（60分×1回）等を提供します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-16 bg-gray-50" id="booking">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        お申し込み
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        読書革命への第一歩を踏み出しませんか？
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="100">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">お名前 *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">電話番号 *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">会社名・組織名</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="course_type" class="block text-sm font-medium text-gray-700 mb-2">受講タイプ *</label>
+                            <select id="course_type" name="course_type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="individual">個人受講（¥48,000）</option>
+                                <option value="corporate">法人受講（¥42,000/名・3名以上）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="format" class="block text-sm font-medium text-gray-700 mb-2">受講形式 *</label>
+                            <select id="format" name="format" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="online">オンライン受講</option>
+                                <option value="offline">対面受講（東京）</option>
+                                <option value="onsite">企業研修（出張開催）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="participants" class="block text-sm font-medium text-gray-700 mb-2">参加人数</label>
+                            <input type="number" id="participants" name="participants" min="1" max="20" value="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="reading_habits" class="block text-sm font-medium text-gray-700 mb-2">現在の読書習慣について</label>
+                            <textarea id="reading_habits" name="reading_habits" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="月にどのくらい本を読まれますか？読書に関する課題があればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="goals" class="block text-sm font-medium text-gray-700 mb-2">受講後の目標・期待する成果</label>
+                            <textarea id="goals" name="goals" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="読書技術の向上により、どのような成果を期待されますか？"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="questions" class="block text-sm font-medium text-gray-700 mb-2">ご質問・ご要望</label>
+                            <textarea id="questions" name="questions" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="研修内容や読書法に関するご質問があればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" required class="mt-1 h-4 w-4 text-cyan-600 focus:ring-cyan-500 border-gray-300 rounded">
+                            <label for="privacy" class="ml-2 text-sm text-gray-700">
+                                <a href="#" class="text-cyan-600 hover:underline">プライバシーポリシー</a>に同意します *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-cyan-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg">
+                            申し込み内容を送信
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        お申し込み後、2営業日以内に詳細なご案内をお送りいたします。<br>
+                        読書に関するご相談も、お気軽にお問い合わせください。
+                    </p>
+                    <div class="mt-4">
+                        <a href="tel:03-1234-5678" class="text-cyan-600 font-semibold hover:underline">
+                            <i data-lucide="phone" class="w-4 h-4 inline mr-1"></i>
+                            03-1234-5678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Seminars -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        関連セミナー
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        読書技術と組み合わせることで、学習効果が飛躍的に向上します
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="meta-memory.html" class="group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="brain" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">メタ記憶</h3>
+                            <p class="text-gray-600 text-sm mb-3">学びを、記憶に。知識を、使える力に。</p>
+                            <p class="text-indigo-600 text-sm font-medium">効果的な記憶術で読書効果を最大化 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="reflection.html" class="group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">リフレクション</h3>
+                            <p class="text-gray-600 text-sm mb-3">経験を、智慧に。過去を、未来の力に。</p>
+                            <p class="text-red-600 text-sm font-medium">読書体験を深い学びに変換 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="creative-question.html" class="group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="help-circle" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">クリエイティブ質問</h3>
+                            <p class="text-gray-600 text-sm mb-3">答えを探すのではなく、より良い質問を創る。</p>
+                            <p class="text-blue-600 text-sm font-medium">読書に深い質問力を加える →</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">マナオラプレ</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        toiee Labメソッドによる<br>
+                        実践的な学習支援
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">サービス</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../services.html" class="hover:text-white transition-colors">研修一覧</a></li>
+                        <li><a href="../consultation.html" class="hover:text-white transition-colors">個別相談</a></li>
+                        <li><a href="../testimonials.html" class="hover:text-white transition-colors">導入事例</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">会社情報</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../about.html" class="hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="../faq.html" class="hover:text-white transition-colors">よくある質問</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">お問い合わせ</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            <span>03-1234-5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                            <span>info@manaolapule.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 マナオラプレ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

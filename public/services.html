@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サービス一覧 - manaolapule | toiee Lab認定パートナー</title>
+    <meta name="description" content="manaolapuleが提供する9つのセミナーと個人相談サービス。toiee Lab理論に基づいた実践的な学習プログラムで、あなたの成長を全力でサポートします。">
+    <meta name="keywords" content="セミナー,学習支援,toiee Lab,Beyond Learning,リーダーシップ,コミュニケーション,クリエーティブクエスチョン">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="サービス一覧 - manaolapule">
+    <meta property="og:description" content="9つのセミナーと個人相談で、あなたの成長を全力でサポートします">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600">私たちについて</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600 font-bold">サービス</a>
+                    <a href="testimonials.html" class="nav-link text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                    <a href="faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600 font-bold">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="contact.html" class="block btn-primary text-center">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    サービス一覧
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    toiee Lab理論に基づく9つのセミナーと個人相談で、あなたの成長を全力でサポート
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Navigation -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                    学びの<span class="gradient-text">選択肢</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-right">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">セミナー</h3>
+                        <p class="text-gray-600 mb-4">
+                            体系的に設計された9つのプログラムで、仲間と共に学び合いながら成長していきます。
+                        </p>
+                        <a href="#seminars" class="text-blue-600 hover:text-blue-800 font-medium">
+                            セミナー一覧を見る →
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-left">
+                        <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="user" class="w-8 h-8 text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">個人相談</h3>
+                        <p class="text-gray-600 mb-4">
+                            あなた専用にカスタマイズされた1対1のセッションで、個別の課題に集中的に取り組みます。
+                        </p>
+                        <a href="#consultation" class="text-blue-600 hover:text-blue-800 font-medium">
+                            個人相談について →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 9 Seminars -->
+    <section id="seminars" class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    <span class="gradient-text">9つのセミナー</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    Beyond Learningを実践する体系的なプログラム
+                </p>
+            </div>
+            
+            <!-- Seminar Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Seminar 1: Creative Question -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i data-lucide="help-circle" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">クリエーティブクエスチョン</h3>
+                        <p class="text-blue-600 font-medium mb-3">問いが変わる。創造が始まる。</p>
+                        <p class="text-gray-600 mb-4">
+                            固定観念を打ち破る問いの技術を学び、創造的思考力を身につけます。問いの質が答えの質を決める。新しい視点と解決策を生み出す力を養います。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2日間 / オンライン対応</span>
+                            <a href="seminars/creative-question.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 2: Leadership -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="h-48 bg-gradient-to-r from-pink-400 to-pink-600 flex items-center justify-center">
+                        <i data-lucide="users" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">人を育てるリーダーシップ</h3>
+                        <p class="text-pink-600 font-medium mb-3">命令ではなく、成長を。</p>
+                        <p class="text-gray-600 mb-4">
+                            メンバーの自律性と成長を促進するリーダーシップスタイルを習得。支配ではなく支援、命令ではなく質問を通じて、真のリーダーシップを発揮する方法を学びます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2日間 / オンライン対応</span>
+                            <a href="seminars/leadership.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 3: Communication -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+                        <i data-lucide="message-square" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">コミュニケーションの本質</h3>
+                        <p class="text-green-600 font-medium mb-3">伝えるから、つながるへ。</p>
+                        <p class="text-gray-600 mb-4">
+                            表面的なテクニックを超えた、心と心をつなぐコミュニケーションの真髄を探求。聞く力、伝える力、そして相互理解を深める実践的スキルを身につけます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2日間 / オンライン対応</span>
+                            <a href="seminars/communication.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 4: GoodSelf -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i data-lucide="star" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">GoodSelfイメージ統合法</h3>
+                        <p class="text-purple-600 font-medium mb-3">理想の自分に、なる。</p>
+                        <p class="text-gray-600 mb-4">
+                            理想の自分と現在の自分を統合し、自己受容と成長のバランスを取る方法を学習。セルフイメージの変革を通じて、真の自信と行動力を身につけます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2日間 / オンライン対応</span>
+                            <a href="seminars/goodself.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 5: Means-Purpose -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="h-48 bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                        <i data-lucide="compass" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">手段目的ゲーム</h3>
+                        <p class="text-yellow-600 font-medium mb-3">目的を見失わない。</p>
+                        <p class="text-gray-600 mb-4">
+                            手段と目的を明確に区別し、本質的な目標達成のための思考法を習得。複雑な状況でも本来の目的を見失わず、効果的な解決策を見つける力を養います。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">1日間 / オンライン対応</span>
+                            <a href="seminars/means-purpose.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 6: Meta Memory -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="h-48 bg-gradient-to-r from-indigo-400 to-indigo-600 flex items-center justify-center">
+                        <i data-lucide="cpu" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">メタ記憶術</h3>
+                        <p class="text-indigo-600 font-medium mb-3">記憶を使いこなす。</p>
+                        <p class="text-gray-600 mb-4">
+                            単なる記憶テクニックを超えた、記憶のメカニズムを理解し活用する方法を学習。効果的な学習法と情報整理術で、知識を智慧に変換する力を身につけます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">1日間 / オンライン対応</span>
+                            <a href="seminars/meta-memory.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 7: Reflection -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="h-48 bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center">
+                        <i data-lucide="refresh-cw" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">次につながる振り返りの技術</h3>
+                        <p class="text-red-600 font-medium mb-3">経験を、智慧に。</p>
+                        <p class="text-gray-600 mb-4">
+                            経験から最大限の学びを抽出し、次の行動に活かす振り返りの技術を習得。単なる反省を超えて、成長と改善につながる建設的な振り返りのプロセスを学びます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">1日間 / オンライン対応</span>
+                            <a href="seminars/reflection.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 8: Reading -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="h-48 bg-gradient-to-r from-cyan-400 to-cyan-600 flex items-center justify-center">
+                        <i data-lucide="book" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">読書が楽しくなる読み方</h3>
+                        <p class="text-cyan-600 font-medium mb-3">読むから、対話するへ。</p>
+                        <p class="text-gray-600 mb-4">
+                            受動的な読書から能動的な対話へ。本と著者との対話を通じて深い理解と洞察を得る読書法を習得。読書の効果を最大化し、実生活に活かす方法を学びます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">1日間 / オンライン対応</span>
+                            <a href="seminars/reading.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seminar 9: Mental Model -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="h-48 bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center">
+                        <i data-lucide="layers" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">メンタルモデルとデシジョンメーキング</h3>
+                        <p class="text-orange-600 font-medium mb-3">思い込みを、見抜く。</p>
+                        <p class="text-gray-600 mb-4">
+                            無意識の思考パターンと判断基準を明確化し、より良い意思決定を行う力を養成。メンタルモデルの理解を通じて、偏見や先入観を克服する方法を学びます。
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2日間 / オンライン対応</span>
+                            <a href="seminars/mental-model.html" class="btn-primary text-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Individual Consultation -->
+    <section id="consultation" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                        <span class="gradient-text">個人相談</span>
+                    </h2>
+                    <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                        あなたの課題に合わせたカスタマイズされた学習支援
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">1対1で向き合う学習サポート</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 rounded-full p-2 flex-shrink-0">
+                                        <i data-lucide="target" class="w-5 h-5 text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">個別課題の特定</h4>
+                                        <p class="text-gray-600">あなた固有の課題を深掘りし、根本原因を特定します</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-pink-100 rounded-full p-2 flex-shrink-0">
+                                        <i data-lucide="map" class="w-5 h-5 text-pink-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">カスタム学習プラン</h4>
+                                        <p class="text-gray-600">あなたの目標と学習スタイルに合わせたプランを設計</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-green-100 rounded-full p-2 flex-shrink-0">
+                                        <i data-lucide="trending-up" class="w-5 h-5 text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">継続的なフォローアップ</h4>
+                                        <p class="text-gray-600">学習後も継続的にサポートし、確実な成長を実現</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <a href="consultation.html" class="btn-primary inline-flex items-center">
+                                    詳細を見る
+                                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500" 
+                                 alt="個人相談の様子" 
+                                 class="rounded-xl shadow-lg"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Learning Path -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                        学習の<span class="gradient-text">進め方</span>
+                    </h2>
+                    <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                        効果的な学習のためのおすすめパス
+                    </p>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right">
+                        <div class="step-indicator active">1</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">基礎づくり</h3>
+                            <p class="text-gray-600 mb-4">
+                                まずは「クリエーティブクエスチョン」で思考の基盤を作ります。
+                                質の高い問いを立てる力が、その後の学習の質を決定します。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag primary">クリエーティブクエスチョン</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="100">
+                        <div class="step-indicator">2</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">コミュニケーション力の向上</h3>
+                            <p class="text-gray-600 mb-4">
+                                「コミュニケーションの本質」と「人を育てるリーダーシップ」で
+                                人との関わり方を深く学びます。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">コミュニケーションの本質</span>
+                                <span class="tag">人を育てるリーダーシップ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="step-indicator">3</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">自己理解と成長</h3>
+                            <p class="text-gray-600 mb-4">
+                                「GoodSelfイメージ統合法」で自己受容を深め、
+                                「次につながる振り返りの技術」で継続的成長の仕組みを作ります。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">GoodSelfイメージ統合法</span>
+                                <span class="tag">次につながる振り返りの技術</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="300">
+                        <div class="step-indicator">4</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">学習効率の最大化</h3>
+                            <p class="text-gray-600 mb-4">
+                                「読書が楽しくなる読み方」と「メタ記憶術」で
+                                効果的な学習方法を身につけます。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">読書が楽しくなる読み方</span>
+                                <span class="tag">メタ記憶術</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="400">
+                        <div class="step-indicator">5</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">統合と実践</h3>
+                            <p class="text-gray-600 mb-4">
+                                「手段目的ゲーム」と「メンタルモデルとデシジョンメーキング」で
+                                学んだことを統合し、実践に活かします。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">手段目的ゲーム</span>
+                                <span class="tag">メンタルモデルとデシジョンメーキング</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12" data-aos="fade-up">
+                    <p class="text-gray-600 mb-6">
+                        もちろん、あなたの興味や課題に応じて、
+                        どのセミナーからでもスタートしていただけます。
+                    </p>
+                    <a href="contact.html" class="btn-primary inline-flex items-center">
+                        学習相談を予約する
+                        <i data-lucide="calendar" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                あなたに最適な学習プランを見つけませんか？
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                9つのセミナーと個人相談から、あなたの目標と課題に合わせた
+                最適な学習プランをご提案します。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    無料相談を申し込む
+                    <i data-lucide="message-circle" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="testimonials.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                    受講者の声を見る
+                    <i data-lucide="star" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

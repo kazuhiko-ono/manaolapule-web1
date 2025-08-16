@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="効果的なリフレクション研修｜経験を智慧に変える実践的な振り返り技術を習得">
+    <meta name="keywords" content="リフレクション,振り返り,研修,toiee Lab,学習,成長,マナオラプレ">
+    <meta property="og:title" content="リフレクション研修 - 経験を、智慧に。過去を、未来の力に。">
+    <meta property="og:description" content="単なる振り返りを超えた、深い学びと成長を生み出すリフレクション技術を習得">
+    <meta property="og:image" content="/assets/images/reflection-og.jpg">
+    <title>リフレクション研修 - 経験を、智慧に。過去を、未来の力に。 | マナオラプレ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'noto': ['Noto Sans JP', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-noto bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">マナオラプレ</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-600 hover:text-red-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-red-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-red-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-red-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-red-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-red-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-red-600 transition-colors">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="../index.html" class="text-gray-600 hover:text-red-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-red-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-red-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-red-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-red-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-red-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-red-600 transition-colors">お問い合わせ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-red-50 to-orange-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <div class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
+                    1日集中型研修
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+                    <span class="block text-red-600">経験を、智慧に。</span>
+                    <span class="block text-orange-600">過去を、未来の力に。</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    単なる振り返りを超えた、深い学びと成長を生み出す<br>
+                    リフレクション技術を習得しませんか？
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#booking" class="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors shadow-lg">
+                        今すぐ申し込む
+                    </a>
+                    <a href="#details" class="border border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-red-50 transition-colors">
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white" id="details">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        なぜリフレクションが重要なのか？
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        多くの人が「振り返り」をしていますが、表面的な反省で終わってしまい、真の学びや成長につながっていません。
+                        効果的なリフレクション技術を身につけることで、経験を智慧に変え、未来の行動を変革できます。
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="target" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">表面的振り返りからの脱却</h3>
+                        <p class="text-gray-600">
+                            「良かった・悪かった」レベルの振り返りから、深い洞察と具体的な改善につながる
+                            構造化されたリフレクション手法を習得します。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="lightbulb" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">経験価値の最大化</h3>
+                        <p class="text-gray-600">
+                            過去の経験から最大限の学びを抽出し、パターンを発見し、
+                            未来の判断力と行動力を向上させる技術を身につけます。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-yellow-50 to-red-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-yellow-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">継続的成長の仕組み</h3>
+                        <p class="text-gray-600">
+                            一回の研修で終わりではなく、日常的にリフレクションを実践し、
+                            継続的な学習と成長を支える習慣を身につけます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Objectives -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        学習目標と期待できる成果
+                    </h2>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="search" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">深いリフレクション技術の習得</h3>
+                                <p class="text-gray-600 mb-4">
+                                    表面的な振り返りではなく、行動の背景にある思考パターン、感情、価値観まで
+                                    掘り下げて分析する技術を身につけます。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        なぜその行動を取ったのか、何が判断を左右したのかを明確に言語化できるようになります
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="repeat" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">パターン認識と改善サイクル</h3>
+                                <p class="text-gray-600 mb-4">
+                                    複数の経験を横断的に分析し、成功・失敗のパターンを発見し、
+                                    継続的な改善サイクルを回す仕組みを構築します。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        同じ失敗を繰り返さない仕組みと、成功要因を再現する方法を身につけます
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="compass" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">未来志向の意思決定力</h3>
+                                <p class="text-gray-600 mb-4">
+                                    過去の経験から抽出した知見を基に、未来の選択をより良いものにする
+                                    意思決定フレームワークを習得します。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        迷いや後悔が減り、自信を持って判断・行動できるようになります
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        こんな方におすすめ
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">ビジネスパーソン</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                同じ失敗を繰り返してしまう
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                経験を活かしきれていない感覚がある
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                成長スピードを上げたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">管理職・リーダー</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                チームの振り返りを効果的にしたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                部下の成長を加速させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                組織学習を促進したい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-yellow-50 to-red-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">学習者・研究者</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-yellow-600 mr-2 mt-0.5"></i>
+                                学びを深化させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-yellow-600 mr-2 mt-0.5"></i>
+                                研究の質を向上させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-yellow-600 mr-2 mt-0.5"></i>
+                                知識を実践に活かしたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">教育者・コーチ</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                指導効果を高めたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                学習者の内省を促したい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                自分の指導を改善したい
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        プログラム構成
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        1日で理論から実践まで、体系的にリフレクション技術を習得
+                    </p>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Session 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-r from-red-600 to-orange-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション1：リフレクションの基礎理論</h3>
+                            <p class="text-red-100">9:30-11:00 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• なぜ普通の振り返りは効果がないのか</li>
+                                        <li>• 経験学習理論とリフレクションモデル</li>
+                                        <li>• 表面的反省 vs 深い洞察の違い</li>
+                                        <li>• リフレクションの4つのレベル</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 自分の振り返り習慣の診断</li>
+                                        <li>• 失敗事例の多層分析ワーク</li>
+                                        <li>• リフレクション質問フレーム体験</li>
+                                        <li>• ペアでの気づき共有</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-r from-orange-600 to-yellow-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション2：構造化リフレクション技法</h3>
+                            <p class="text-orange-100">11:15-12:45 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• DEAR法（Description, Emotion, Analysis, Result）</li>
+                                        <li>• 時間軸リフレクション（前・中・後）</li>
+                                        <li>• 多角度分析（自分・相手・状況・環境）</li>
+                                        <li>• パターン発見のための比較分析</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 最近の重要な経験のDEAR分析</li>
+                                        <li>• 成功と失敗の比較ワーク</li>
+                                        <li>• リフレクションシート作成</li>
+                                        <li>• グループでの分析結果発表</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-r from-yellow-600 to-red-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション3：パターン認識と改善設計</h3>
+                            <p class="text-yellow-100">13:45-15:15 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 行動パターンの抽出方法</li>
+                                        <li>• 思考の癖と感情の傾向分析</li>
+                                        <li>• 環境要因と状況依存性の理解</li>
+                                        <li>• 改善仮説の立て方</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 過去6ヶ月の経験マッピング</li>
+                                        <li>• パターン発見ワークショップ</li>
+                                        <li>• 改善アクションプラン作成</li>
+                                        <li>• コーチングペアでの検証</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-gradient-to-r from-red-600 to-pink-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション4：継続的リフレクション習慣化</h3>
+                            <p class="text-red-100">15:30-17:00 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 日常的リフレクション習慣の設計</li>
+                                        <li>• デジタルツールの活用方法</li>
+                                        <li>• 他者との相互リフレクション</li>
+                                        <li>• 継続のための仕組みづくり</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 個人リフレクション計画作成</li>
+                                        <li>• リフレクションバディ決定</li>
+                                        <li>• 30日実践チャレンジ設計</li>
+                                        <li>• 全体発表と相互フィードバック</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講料金
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        投資に見合う確実な価値をお約束します
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl border border-red-200" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">個人受講</h3>
+                            <div class="text-4xl font-bold text-red-600 mb-2">¥38,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・教材費込み</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-red-600 mr-3"></i>
+                                    <span class="text-gray-700">6時間の集中研修</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-red-600 mr-3"></i>
+                                    <span class="text-gray-700">リフレクションツール一式</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-red-600 mr-3"></i>
+                                    <span class="text-gray-700">30日間フォローアップ</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-red-600 mr-3"></i>
+                                    <span class="text-gray-700">オンライン振り返り会参加権</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors block text-center">
+                                個人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 rounded-xl border border-orange-200" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">法人受講</h3>
+                            <div class="text-4xl font-bold text-orange-600 mb-2">¥32,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・1名あたり・3名以上</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-3"></i>
+                                    <span class="text-gray-700">個人受講の全内容</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-3"></i>
+                                    <span class="text-gray-700">チームリフレクション設計</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-3"></i>
+                                    <span class="text-gray-700">組織導入サポート</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-3"></i>
+                                    <span class="text-gray-700">3ヶ月間メールサポート</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-700 transition-colors block text-center">
+                                法人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        ※ オンライン受講も可能です（料金同額）<br>
+                        ※ 企業研修として出張開催も承ります（別途お見積り）
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講者の声
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        リフレクション技術を身につけた方々の変化
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                田
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">田中様</h4>
+                                <p class="text-gray-600 text-sm">営業マネージャー・40代</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「今まで『今日も頑張った』程度の振り返りしかできていませんでした。このメソッドを学んでから、
+                            なぜうまくいったのか、何を改善すべきかが明確になり、チーム全体の営業成績が20％向上しました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 漠然とした反省のみ<br>
+                                <strong>After:</strong> 具体的な改善策を毎日実行
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">
+                                佐
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">佐藤様</h4>
+                                <p class="text-gray-600 text-sm">研究開発職・30代</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「実験の失敗から学ぶことが苦手でした。このリフレクション技術により、失敗の本質的原因を
+                            特定できるようになり、研究効率が格段に向上。半年で3つの画期的発見につながりました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 失敗を単なる運だと考える<br>
+                                <strong>After:</strong> 失敗から系統的に学習
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold">
+                                高
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">高橋様</h4>
+                                <p class="text-gray-600 text-sm">学校教師・50代</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「生徒の反応が良くない授業の原因がわからず悩んでいました。リフレクション技術を使って
+                            授業分析を行うようになってから、生徒の理解度と授業満足度が大幅に改善しました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 感覚的な授業改善<br>
+                                <strong>After:</strong> データに基づく系統的改善
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        よくある質問
+                    </h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">リフレクションの経験がなくても参加できますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                はい、全く問題ありません。むしろリフレクション初心者の方にこそ受講していただきたい内容です。
+                                基礎から丁寧に説明し、実践的なワークを通じて無理なく技術を身につけられます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">1日で本当に身につくのでしょうか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                1日で基本的な技術は確実に習得できます。ただし、深いリフレクション習慣の定着には継続的な実践が必要です。
+                                そのため30日間のフォローアップと継続サポートを提供し、確実な習慣化をお手伝いします。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">チーム全体で受講する場合の効果は？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                個人の成長に加えて、チーム全体の学習文化が向上します。共通のリフレクション言語を持つことで、
+                                より効果的な振り返りミーティングや改善活動が可能になり、チームパフォーマンスの向上が期待できます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">オンライン受講と対面受講の違いは？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                学習内容と効果に違いはありません。オンラインでも小グループワークやペアワークを効果的に行い、
+                                対面と同等の学習体験を提供します。地理的制約なく参加できるのがオンラインの大きなメリットです。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="500">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">受講後のサポートはどのような内容ですか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                30日間のメール相談、月1回のオンライン振り返り会、リフレクション実践記録シートの提供、
+                                困った時の個別相談（30分×1回）などを通じて、習慣化まで丁寧にサポートします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-16 bg-gray-50" id="booking">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        お申し込み
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        経験を智慧に変える旅を始めませんか？
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="100">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">お名前 *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">電話番号 *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">会社名・組織名</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="course_type" class="block text-sm font-medium text-gray-700 mb-2">受講タイプ *</label>
+                            <select id="course_type" name="course_type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="individual">個人受講（¥38,000）</option>
+                                <option value="corporate">法人受講（¥32,000/名・3名以上）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="format" class="block text-sm font-medium text-gray-700 mb-2">受講形式 *</label>
+                            <select id="format" name="format" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="online">オンライン受講</option>
+                                <option value="offline">対面受講（東京）</option>
+                                <option value="onsite">企業研修（出張開催）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="participants" class="block text-sm font-medium text-gray-700 mb-2">参加人数</label>
+                            <input type="number" id="participants" name="participants" min="1" max="20" value="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="motivation" class="block text-sm font-medium text-gray-700 mb-2">受講動機・期待する成果</label>
+                            <textarea id="motivation" name="motivation" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="リフレクション研修への期待や、解決したい課題があればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="questions" class="block text-sm font-medium text-gray-700 mb-2">ご質問・ご要望</label>
+                            <textarea id="questions" name="questions" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="研修内容や実施に関するご質問があればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" required class="mt-1 h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded">
+                            <label for="privacy" class="ml-2 text-sm text-gray-700">
+                                <a href="#" class="text-red-600 hover:underline">プライバシーポリシー</a>に同意します *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors shadow-lg">
+                            申し込み内容を送信
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        お申し込み後、2営業日以内に詳細なご案内をお送りいたします。<br>
+                        お急ぎの場合は、直接お電話でお問い合わせください。
+                    </p>
+                    <div class="mt-4">
+                        <a href="tel:03-1234-5678" class="text-red-600 font-semibold hover:underline">
+                            <i data-lucide="phone" class="w-4 h-4 inline mr-1"></i>
+                            03-1234-5678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Seminars -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        関連セミナー
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        リフレクション技術と組み合わせることで、より効果的な学習が可能です
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="meta-memory.html" class="group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="brain" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">メタ記憶</h3>
+                            <p class="text-gray-600 text-sm mb-3">学びを、記憶に。知識を、使える力に。</p>
+                            <p class="text-indigo-600 text-sm font-medium">効果的な記憶術と学習法 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mental-model.html" class="group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">メンタルモデル</h3>
+                            <p class="text-gray-600 text-sm mb-3">思い込みを、見抜く。決断を、進化させる。</p>
+                            <p class="text-purple-600 text-sm font-medium">思考パターンと意思決定 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="creative-question.html" class="group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="help-circle" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">クリエイティブ質問</h3>
+                            <p class="text-gray-600 text-sm mb-3">答えを探すのではなく、より良い質問を創る。</p>
+                            <p class="text-blue-600 text-sm font-medium">質問力と創造性向上 →</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">マナオラプレ</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        toiee Labメソッドによる<br>
+                        実践的な学習支援
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">サービス</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../services.html" class="hover:text-white transition-colors">研修一覧</a></li>
+                        <li><a href="../consultation.html" class="hover:text-white transition-colors">個別相談</a></li>
+                        <li><a href="../testimonials.html" class="hover:text-white transition-colors">導入事例</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">会社情報</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../about.html" class="hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="../faq.html" class="hover:text-white transition-colors">よくある質問</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">お問い合わせ</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            <span>03-1234-5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                            <span>info@manaolapule.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 マナオラプレ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

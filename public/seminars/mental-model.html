@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="メンタルモデル研修｜思い込みを見抜き、決断を進化させる実践的な意思決定技術を習得">
+    <meta name="keywords" content="メンタルモデル,意思決定,研修,toiee Lab,思考,判断力,マナオラプレ">
+    <meta property="og:title" content="メンタルモデル研修 - 思い込みを、見抜く。決断を、進化させる。">
+    <meta property="og:description" content="無意識の思い込みを発見し、より良い判断と意思決定を実現するメンタルモデル技術を習得">
+    <meta property="og:image" content="/assets/images/mental-model-og.jpg">
+    <title>メンタルモデル研修 - 思い込みを、見抜く。決断を、進化させる。 | マナオラプレ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'noto': ['Noto Sans JP', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-noto bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">マナオラプレ</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-600 hover:text-purple-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-purple-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-purple-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-purple-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-purple-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-purple-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-purple-600 transition-colors">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="../index.html" class="text-gray-600 hover:text-purple-600 transition-colors">ホーム</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-purple-600 transition-colors">会社概要</a>
+                    <a href="../services.html" class="text-gray-600 hover:text-purple-600 transition-colors">サービス</a>
+                    <a href="../consultation.html" class="text-gray-600 hover:text-purple-600 transition-colors">個別相談</a>
+                    <a href="../testimonials.html" class="text-gray-600 hover:text-purple-600 transition-colors">お客様の声</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-purple-600 transition-colors">FAQ</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-purple-600 transition-colors">お問い合わせ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <div class="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i data-lucide="target" class="w-4 h-4 mr-2"></i>
+                    1日集中型研修
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+                    <span class="block text-purple-600">思い込みを、見抜く。</span>
+                    <span class="block text-pink-600">決断を、進化させる。</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    無意識の思い込みを発見し、<br>
+                    より良い判断と意思決定を実現しませんか？
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#booking" class="bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors shadow-lg">
+                        今すぐ申し込む
+                    </a>
+                    <a href="#details" class="border border-purple-600 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-colors">
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white" id="details">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        なぜメンタルモデルなのか？
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        私たちの判断や決断の多くは、無意識の「思い込み」に支配されています。
+                        これらのメンタルモデルを意識化し、より適切で効果的な思考パターンに進化させることで、
+                        人生とビジネスの質を大幅に向上させることができます。
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="eye" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">隠れた思い込みの発見</h3>
+                        <p class="text-gray-600">
+                            無意識に判断を歪めている認知バイアス、固定観念、
+                            前提条件を体系的に発見し、客観視する技術を習得します。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-50 to-red-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-pink-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="shuffle" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">思考パターンの進化</h3>
+                        <p class="text-gray-600">
+                            既存の思考の枠組みを拡張し、より柔軟で効果的な
+                            メンタルモデルを構築する方法を身につけます。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-purple-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="zap" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">意思決定力の向上</h3>
+                        <p class="text-gray-600">
+                            複雑な状況でも適切な判断を下すための、
+                            構造化された意思決定プロセスを習得します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Objectives -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        学習目標と期待できる成果
+                    </h2>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="scan" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">メンタルモデル診断技術</h3>
+                                <p class="text-gray-600 mb-4">
+                                    自分や他者の思考パターンを客観的に分析し、隠れた前提や偏見を
+                                    発見する診断技術を習得します。認知の歪みを見抜く力を身につけます。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        判断ミスや思い込みによる失敗を80％削減し、より客観的な視点を獲得します
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="refresh-cw" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">思考パターンのアップデート</h3>
+                                <p class="text-gray-600 mb-4">
+                                    古い思考パターンを新しい状況に適応させ、より効果的な
+                                    メンタルモデルに進化させる技術を身につけます。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        変化に柔軟に対応でき、新しい状況でも適切な判断を下せるようになります
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="compass" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">高度な意思決定システム</h3>
+                                <p class="text-gray-600 mb-4">
+                                    複雑で不確実な状況下でも、系統的かつ効果的な意思決定を行うための
+                                    フレームワークとプロセスを構築します。
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>具体的な成果：</strong>
+                                        決断スピードが2倍向上し、判断の質と一貫性が大幅に改善します
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        こんな方におすすめ
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">経営者・管理職</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                重要な意思決定の質を向上させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                判断ミスを減らしたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-2 mt-0.5"></i>
+                                チームの思考力を向上させたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-50 to-red-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">専門職・コンサルタント</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                論理的思考力を強化したい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                クライアントの思い込みを見抜きたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-2 mt-0.5"></i>
+                                問題解決力を向上させたい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">研究者・アナリスト</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                研究の客観性を向上させたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                分析の精度を上げたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-red-600 mr-2 mt-0.5"></i>
+                                認知バイアスを回避したい
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-purple-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3">個人の成長を目指す方</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                自分の思考パターンを知りたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                より良い選択をしたい
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-orange-600 mr-2 mt-0.5"></i>
+                                人生の質を向上させたい
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        プログラム構成
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        1日で思考を革新。メンタルモデルを診断・進化させる集中研修
+                    </p>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Session 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション1：メンタルモデルの基礎理解</h3>
+                            <p class="text-purple-100">9:30-11:00 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• メンタルモデルとは何か</li>
+                                        <li>• 思い込みが判断に与える影響</li>
+                                        <li>• 認知バイアスの種類と特徴</li>
+                                        <li>• 主要な意思決定の落とし穴</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 自分の思い込み診断テスト</li>
+                                        <li>• バイアス体験エクササイズ</li>
+                                        <li>• 判断ミス事例の分析</li>
+                                        <li>• ペアでの気づき共有</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-r from-pink-600 to-red-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション2：思い込み発見技術</h3>
+                            <p class="text-pink-100">11:15-12:45 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 隠れた前提の発見方法</li>
+                                        <li>• 思考の観察・メタ認知技術</li>
+                                        <li>• 感情と判断の関係性</li>
+                                        <li>• 環境と思考パターンの相関</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 思考プロセス分解ワーク</li>
+                                        <li>• 前提発見エクササイズ</li>
+                                        <li>• 感情・判断マッピング</li>
+                                        <li>• グループでの相互診断</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-r from-red-600 to-orange-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション3：メンタルモデル進化技術</h3>
+                            <p class="text-red-100">13:45-15:15 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 思考パターンの書き換え技術</li>
+                                        <li>• 多角的視点の構築方法</li>
+                                        <li>• 柔軟な思考フレームワーク</li>
+                                        <li>• 新しいメンタルモデルの設計</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 思考パターン改善ワーク</li>
+                                        <li>• 視点転換エクササイズ</li>
+                                        <li>• 新しいモデル設計</li>
+                                        <li>• 実践シミュレーション</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Session 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-gradient-to-r from-orange-600 to-purple-600 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">セッション4：高度な意思決定システム</h3>
+                            <p class="text-orange-100">15:30-17:00 (90分)</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">学習内容</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 構造化意思決定プロセス</li>
+                                        <li>• 複雑性とリスクの評価</li>
+                                        <li>• 直感と論理の統合</li>
+                                        <li>• 継続的改善サイクル</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-3">実践活動</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>• 意思決定ケーススタディ</li>
+                                        <li>• リスク評価ワーク</li>
+                                        <li>• 個人システム設計</li>
+                                        <li>• 実践計画作成と発表</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講料金
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        思考革新への投資。一生使える判断力を手に入れる
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-200" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">個人受講</h3>
+                            <div class="text-4xl font-bold text-purple-600 mb-2">¥45,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・教材費込み</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">6時間の集中研修</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">メンタルモデル診断ツール</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">意思決定フレームワーク集</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">30日間実践サポート</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">月1回のフォローアップ会</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors block text-center">
+                                個人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-50 to-red-50 p-8 rounded-xl border border-pink-200" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">法人受講</h3>
+                            <div class="text-4xl font-bold text-pink-600 mb-2">¥38,000</div>
+                            <p class="text-gray-600 mb-6">税込価格・1名あたり・3名以上</p>
+                            
+                            <div class="space-y-3 text-left mb-8">
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-3"></i>
+                                    <span class="text-gray-700">個人受講の全内容</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-3"></i>
+                                    <span class="text-gray-700">組織思考文化の改善支援</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-3"></i>
+                                    <span class="text-gray-700">チーム意思決定プロセス設計</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-3"></i>
+                                    <span class="text-gray-700">3ヶ月間組織サポート</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-pink-600 mr-3"></i>
+                                    <span class="text-gray-700">管理職向け追加資料</span>
+                                </div>
+                            </div>
+                            
+                            <a href="#booking" class="w-full bg-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-pink-700 transition-colors block text-center">
+                                法人で申し込む
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        ※ オンライン受講も可能です（料金同額）<br>
+                        ※ 企業研修として出張開催も承ります（別途お見積り）<br>
+                        ※ 受講者には継続サポートコミュニティへの参加権を提供
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        受講者の声
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        思考革新を体験した方々の変化をご覧ください
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                                中
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">中村様</h4>
+                                <p class="text-gray-600 text-sm">IT企業CEO・45歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「自分では論理的だと思っていましたが、実は多くの思い込みに支配されていました。
+                            このメソッドで戦略的意思決定の質が劇的に改善し、会社の業績が30％向上しました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 感覚的な経営判断<br>
+                                <strong>After:</strong> 構造化された戦略的意思決定
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                                伊
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">伊藤様</h4>
+                                <p class="text-gray-600 text-sm">経営コンサルタント・39歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「クライアントの問題分析で見落としが多かったのですが、メンタルモデル診断技術により
+                            根本原因を正確に特定できるように。コンサルティングの成果が格段に向上しました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 表面的な問題分析<br>
+                                <strong>After:</strong> 思い込みレベルまで掘り下げた根本分析
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                加
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">加藤様</h4>
+                                <p class="text-gray-600 text-sm">大学研究者・41歳</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            「研究で確証バイアスに陥りがちでしたが、メンタルモデル技術で客観性が大幅に向上。
+                            研究の質が改善し、査読付き論文の採択率が2倍になりました。」
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-600">
+                                <strong>Before:</strong> 無意識のバイアスに影響された研究<br>
+                                <strong>After:</strong> 客観的で厳密な研究手法を確立
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        よくある質問
+                    </h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">心理学の知識がなくても参加できますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                はい、専門知識は不要です。日常的な思考パターンや判断の仕方を扱うため、
+                                すべての方に理解しやすい内容となっています。実践的なワークを中心に進めるので、体験的に学習できます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">すぐに判断力は向上しますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                基本的な診断技術は1日で習得できます。ただし、思考パターンの完全な変革には継続的な実践が必要です。
+                                30日間のサポート期間中に習慣化し、確実な変化を実感していただけます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">どのような業界・職種に効果的ですか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                判断や意思決定を行うすべての分野で効果的です。特に経営、コンサルティング、研究、
+                                医療、法律、教育などの専門職、また投資や人事などの判断が重要な業務において高い効果を発揮します。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">個人的な問題解決にも応用できますか？</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                はい、ビジネスだけでなく人生のあらゆる選択に応用できます。
+                                人間関係、キャリア、投資、子育てなど、日常の意思決定の質を向上させ、
+                                より充実した人生を実現するための技術として活用できます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg" data-aos="fade-up" data-aos-delay="500">
+                        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                            <span class="font-medium text-gray-800">受講後のサポート内容について教えてください</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform faq-icon"></i>
+                        </button>
+                        <div class="px-6 pb-4 hidden faq-content">
+                            <p class="text-gray-600">
+                                30日間のメール相談、実践記録シートのフィードバック、月1回のオンラインフォローアップ会、
+                                思考パターン診断の継続実施、緊急時の個別相談（45分×1回）などを提供します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-16 bg-gray-50" id="booking">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        お申し込み
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        思考革新への第一歩を踏み出しませんか？
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="100">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">お名前 *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">電話番号 *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">会社名・組織名</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="course_type" class="block text-sm font-medium text-gray-700 mb-2">受講タイプ *</label>
+                            <select id="course_type" name="course_type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="individual">個人受講（¥45,000）</option>
+                                <option value="corporate">法人受講（¥38,000/名・3名以上）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="format" class="block text-sm font-medium text-gray-700 mb-2">受講形式 *</label>
+                            <select id="format" name="format" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <option value="">選択してください</option>
+                                <option value="online">オンライン受講</option>
+                                <option value="offline">対面受講（東京）</option>
+                                <option value="onsite">企業研修（出張開催）</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="participants" class="block text-sm font-medium text-gray-700 mb-2">参加人数</label>
+                            <input type="number" id="participants" name="participants" min="1" max="20" value="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="decision_challenges" class="block text-sm font-medium text-gray-700 mb-2">現在の意思決定に関する課題</label>
+                            <textarea id="decision_challenges" name="decision_challenges" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="判断で困ることや、改善したい思考パターンがあればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="goals" class="block text-sm font-medium text-gray-700 mb-2">受講後の目標・期待する成果</label>
+                            <textarea id="goals" name="goals" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="メンタルモデルの改善により、どのような変化を期待されますか？"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="questions" class="block text-sm font-medium text-gray-700 mb-2">ご質問・ご要望</label>
+                            <textarea id="questions" name="questions" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="メンタルモデルや意思決定に関するご質問があればお聞かせください"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" required class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <label for="privacy" class="ml-2 text-sm text-gray-700">
+                                <a href="#" class="text-purple-600 hover:underline">プライバシーポリシー</a>に同意します *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-purple-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors shadow-lg">
+                            申し込み内容を送信
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        お申し込み後、2営業日以内に詳細なご案内をお送りいたします。<br>
+                        思考や判断に関するご相談も、お気軽にお問い合わせください。
+                    </p>
+                    <div class="mt-4">
+                        <a href="tel:03-1234-5678" class="text-purple-600 font-semibold hover:underline">
+                            <i data-lucide="phone" class="w-4 h-4 inline mr-1"></i>
+                            03-1234-5678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Seminars -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        関連セミナー
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        メンタルモデル技術と組み合わせることで、さらに深い変革が可能です
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="reflection.html" class="group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">リフレクション</h3>
+                            <p class="text-gray-600 text-sm mb-3">経験を、智慧に。過去を、未来の力に。</p>
+                            <p class="text-red-600 text-sm font-medium">思考パターンの振り返りと改善 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="creative-question.html" class="group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="help-circle" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">クリエイティブ質問</h3>
+                            <p class="text-gray-600 text-sm mb-3">答えを探すのではなく、より良い質問を創る。</p>
+                            <p class="text-blue-600 text-sm font-medium">思い込みを突破する質問力 →</p>
+                        </div>
+                    </a>
+                    
+                    <a href="leadership.html" class="group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-br from-pink-50 to-red-50 p-6 rounded-xl hover:shadow-lg transition-all">
+                            <div class="w-12 h-12 bg-pink-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i data-lucide="users" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">リーダーシップ</h3>
+                            <p class="text-gray-600 text-sm mb-3">支配から、支援へ。命令から、共創へ。</p>
+                            <p class="text-pink-600 text-sm font-medium">より良い判断でチームを導く →</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">マナオラプレ</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        toiee Labメソッドによる<br>
+                        実践的な学習支援
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">サービス</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../services.html" class="hover:text-white transition-colors">研修一覧</a></li>
+                        <li><a href="../consultation.html" class="hover:text-white transition-colors">個別相談</a></li>
+                        <li><a href="../testimonials.html" class="hover:text-white transition-colors">導入事例</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">会社情報</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../about.html" class="hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="../faq.html" class="hover:text-white transition-colors">よくある質問</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">お問い合わせ</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            <span>03-1234-5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                            <span>info@manaolapule.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 マナオラプレ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

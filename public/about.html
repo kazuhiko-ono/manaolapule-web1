@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私たちについて - manaolapule | toiee Lab認定パートナー</title>
+    <meta name="description" content="manaolapuleは、toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニーです。人本来の学習メカニズムに基づいた実践的な学習支援を提供します。">
+    <meta name="keywords" content="manaolapule,会社情報,toiee Lab認定パートナー,学習支援,Beyond Learning,理念">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="私たちについて - manaolapule">
+    <meta property="og:description" content="toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-bold">私たちについて</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600">サービス</a>
+                    <a href="testimonials.html" class="nav-link text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                    <a href="faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600 font-bold">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="contact.html" class="block btn-primary text-center">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    私たちについて
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mission Section -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="bg-blue-100 rounded-lg inline-flex items-center px-3 py-1 mb-4">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-blue-600 mr-2"></i>
+                        <span class="text-sm font-medium text-blue-800">Our Mission</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        学びを通じて<br>
+                        <span class="gradient-text">人と組織の可能性を解放する</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        私たちmanaolapuleは、toiee Labの認定パートナーとして、
+                        最先端の学習理論「Beyond Learning」を実践しています。
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        従来の「教える・教えられる」という一方向の学習から脱却し、
+                        人本来が持つ学習能力を最大限に引き出すことで、
+                        個人と組織の真の成長を実現します。
+                    </p>
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="font-bold mb-3 flex items-center">
+                            <i data-lucide="quote" class="w-5 h-5 text-blue-600 mr-2"></i>
+                            Beyond Learning とは
+                        </h3>
+                        <p class="text-gray-600">
+                            単なる知識の習得を超えて、思考パターンや行動様式、
+                            さらには人生観までも変革する深い学びのこと。
+                            私たちはこの理念を体現し、実践する場を提供しています。
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" 
+                         alt="私たちのミッション" 
+                         class="rounded-2xl shadow-2xl"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CEO Profile -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                        代表者プロフィール
+                    </h2>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-1">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" 
+                                 alt="代表者写真" 
+                                 class="rounded-xl shadow-lg w-full"
+                                 loading="lazy">
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold mb-2">山田 太郎</h3>
+                            <p class="text-blue-600 font-medium mb-4">代表取締役 / toiee Lab認定ファシリテーター</p>
+                            
+                            <div class="space-y-4 text-gray-600">
+                                <p>
+                                    大手IT企業で15年間、人材育成とチームビルディングに従事。
+                                    その中で感じた従来の教育手法の限界から、toiee Labの学習理論に出会い、
+                                    その革新性と実効性に感銘を受ける。
+                                </p>
+                                <p>
+                                    2018年にmanaolapuleを設立。toiee Lab認定パートナーとして、
+                                    これまでに2,000名以上の受講者に対してセミナーと個人相談を提供。
+                                    「学びを通じて人生を変える」をモットーに、日々活動している。
+                                </p>
+                            </div>
+                            
+                            <div class="mt-6 pt-6 border-t">
+                                <h4 class="font-bold mb-3">保有資格・認定</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="tag primary">toiee Lab認定ファシリテーター</span>
+                                    <span class="tag primary">Team Learning認定講師</span>
+                                    <span class="tag">キャリアコンサルタント</span>
+                                    <span class="tag">産業カウンセラー</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Values -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    私たちの<span class="gradient-text">価値観</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    manaolapuleが大切にしている5つの価値観
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Value 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-blue-600" data-aos="flip-left" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i data-lucide="heart" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">共感と理解</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        学習者一人ひとりの状況や感情に寄り添い、深い共感と理解から始まる学習支援を行います。
+                    </p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-pink-600" data-aos="flip-left" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-100 rounded-full p-3 mr-4">
+                            <i data-lucide="zap" class="w-6 h-6 text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">実践と行動</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        知識を学ぶだけでなく、実際の場面で活用できる実践的なスキルの習得を重視します。
+                    </p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-green-600" data-aos="flip-left" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 rounded-full p-3 mr-4">
+                            <i data-lucide="users" class="w-6 h-6 text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">協働と成長</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        学習者同士が互いに学び合い、共に成長する協働的な学習環境を創造します。
+                    </p>
+                </div>
+                
+                <!-- Value 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-purple-600" data-aos="flip-left" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 rounded-full p-3 mr-4">
+                            <i data-lucide="lightbulb" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">創造と革新</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        固定観念にとらわれず、常に新しい視点と方法で学習の可能性を追求します。
+                    </p>
+                </div>
+                
+                <!-- Value 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-yellow-600" data-aos="flip-left" data-aos-delay="500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 rounded-full p-3 mr-4">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">信頼と誠実</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        学習者との信頼関係を最も大切にし、誠実な姿勢で向き合い続けます。
+                    </p>
+                </div>
+                
+                <!-- Value 6 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-indigo-600" data-aos="flip-left" data-aos-delay="600">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 rounded-full p-3 mr-4">
+                            <i data-lucide="infinity" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">継続と持続</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        一時的な成果ではなく、持続可能な成長と学習の習慣化を支援します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- toiee Lab Partnership -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center bg-white rounded-full px-4 py-2 shadow-md mb-4" data-aos="fade-up">
+                        <i data-lucide="award" class="w-5 h-5 text-blue-600 mr-2"></i>
+                        <span class="text-sm font-medium">toiee Lab Certified Partner</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="100">
+                        toiee Lab認定パートナーとして
+                    </h2>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="prose prose-lg max-w-none text-gray-600">
+                        <p class="mb-6">
+                            toiee Labは、「人本来の学習メカニズム」を科学的に研究し、
+                            実践的な学習理論とメソッドを開発している組織です。
+                            私たちmanaolapuleは、その認定パートナーとして、
+                            toiee Labの理論を忠実に実践しながら、
+                            独自の経験と専門性を加えたサービスを提供しています。
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="font-bold text-lg mb-3 flex items-center">
+                                    <i data-lucide="book" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                    理論学習
+                                </h3>
+                                <p class="text-sm">
+                                    toiee Lab Onlineで最新の学習理論を習得し、
+                                    常に最先端の知識をアップデート
+                                </p>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-6">
+                                <h3 class="font-bold text-lg mb-3 flex items-center">
+                                    <i data-lucide="presentation" class="w-5 h-5 text-green-600 mr-2"></i>
+                                    実践提供
+                                </h3>
+                                <p class="text-sm">
+                                    manaolapuleのセミナーと個人相談で、
+                                    理論を実践に落とし込む体験を提供
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <h3 class="font-bold mb-4">認定パートナーの責任と誇り</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>toiee Labの厳格な認定基準をクリアした講師陣による質の高い指導</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>定期的な研修と相互学習による継続的なスキルアップ</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>グローバルなネットワークを活用した最新情報の共有</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>品質保証された教材とカリキュラムの提供</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Info -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center" data-aos="fade-up">
+                    会社概要
+                </h2>
+                
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <table class="w-full">
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700 w-1/3">会社名</td>
+                                <td class="px-6 py-4">株式会社manaolapule</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">設立</td>
+                                <td class="px-6 py-4">2018年4月1日</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">代表者</td>
+                                <td class="px-6 py-4">代表取締役 山田 太郎</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">所在地</td>
+                                <td class="px-6 py-4">
+                                    〒150-0001<br>
+                                    東京都渋谷区神宮前1-2-3 ラーニングビル5F
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">連絡先</td>
+                                <td class="px-6 py-4">
+                                    TEL: 03-1234-5678<br>
+                                    Email: info@manaolapule.com
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">事業内容</td>
+                                <td class="px-6 py-4">
+                                    <ul class="space-y-1">
+                                        <li>・企業向け研修・セミナーの企画運営</li>
+                                        <li>・個人向け学習支援・コーチング</li>
+                                        <li>・toiee Lab認定プログラムの提供</li>
+                                        <li>・教育コンテンツの開発・販売</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-gray-50 px-6 py-4 font-bold text-gray-700">認定・資格</td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tag primary">toiee Lab認定パートナー</span>
+                                        <span class="tag">プライバシーマーク取得</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    沿革
+                </h2>
+                
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="space-y-8">
+                        <div class="relative flex items-start" data-aos="fade-right">
+                            <div class="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-blue-600 font-bold">2018年4月</span>
+                                <h3 class="font-bold text-lg">株式会社manaolapule設立</h3>
+                                <p class="text-gray-600">学習支援事業をスタート</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start" data-aos="fade-right" data-aos-delay="100">
+                            <div class="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-blue-600 font-bold">2019年2月</span>
+                                <h3 class="font-bold text-lg">toiee Lab認定パートナー取得</h3>
+                                <p class="text-gray-600">厳格な審査を経て認定パートナーに</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start" data-aos="fade-right" data-aos-delay="200">
+                            <div class="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-blue-600 font-bold">2020年6月</span>
+                                <h3 class="font-bold text-lg">オンラインセミナー開始</h3>
+                                <p class="text-gray-600">全国どこからでも受講可能に</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start" data-aos="fade-right" data-aos-delay="300">
+                            <div class="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-blue-600 font-bold">2021年9月</span>
+                                <h3 class="font-bold text-lg">受講者数1,000名突破</h3>
+                                <p class="text-gray-600">多くの方に支持される存在に</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start" data-aos="fade-right" data-aos-delay="400">
+                            <div class="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-blue-600 font-bold">2023年3月</span>
+                                <h3 class="font-bold text-lg">9つのセミナープログラム確立</h3>
+                                <p class="text-gray-600">体系的な学習プログラムを完成</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start" data-aos="fade-right" data-aos-delay="500">
+                            <div class="absolute left-8 w-4 h-4 bg-green-600 rounded-full -translate-x-1/2 animate-pulse"></div>
+                            <div class="ml-20">
+                                <span class="text-sm text-green-600 font-bold">現在</span>
+                                <h3 class="font-bold text-lg">受講者数2,000名以上</h3>
+                                <p class="text-gray-600">さらなる成長と発展を目指して</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                一緒に成長の第一歩を踏み出しましょう
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                私たちの理念と取り組みに共感いただけましたら、
+                ぜひ一度お話をお聞かせください。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    お問い合わせする
+                    <i data-lucide="message-circle" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="services.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                    サービスを見る
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

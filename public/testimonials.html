@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実績・お客様の声 - manaolapule | toiee Lab認定パートナー</title>
+    <meta name="description" content="manaolapuleの受講者の成功事例とお客様の声。実際に受講された方々の体験談と成果をご紹介します。toiee Lab理論に基づく学習支援の効果をご確認ください。">
+    <meta name="keywords" content="実績,お客様の声,成功事例,体験談,受講者,効果,manaolapule,toiee Lab">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="実績・お客様の声 - manaolapule">
+    <meta property="og:description" content="受講者の成功事例とお客様の声をご紹介">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600">私たちについて</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600">サービス</a>
+                    <a href="testimonials.html" class="nav-link text-gray-700 hover:text-blue-600 font-bold">実績・お客様の声</a>
+                    <a href="faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600 font-bold">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="contact.html" class="block btn-primary text-center">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    実績・お客様の声
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    manaolapuleで学ばれた方々の成功事例と体験談
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Achievement Numbers -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">
+                        <span class="count-up" data-target="2000">0</span>+
+                    </div>
+                    <p class="text-lg">受講者数</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">
+                        <span class="count-up" data-target="98">0</span>%
+                    </div>
+                    <p class="text-lg">満足度</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">
+                        <span class="count-up" data-target="450">0</span>+
+                    </div>
+                    <p class="text-lg">開催実績</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">
+                        <span class="count-up" data-target="95">0</span>%
+                    </div>
+                    <p class="text-lg">リピート率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Success Stories -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    成功<span class="gradient-text">事例</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    学びを通じて人生を変えた方々のストーリー
+                </p>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Success Story 1 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" 
+                                 alt="田中太郎様の写真" 
+                                 class="rounded-xl w-full shadow-lg"
+                                 loading="lazy">
+                            <div class="text-center mt-4">
+                                <h3 class="font-bold text-lg">田中 太郎様</h3>
+                                <p class="text-gray-600">IT企業 マネージャー</p>
+                                <div class="flex justify-center mt-2">
+                                    <span class="tag primary">リーダーシップ</span>
+                                    <span class="tag">個人相談</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="mb-6">
+                                <h4 class="text-xl font-bold mb-3 text-blue-600">
+                                    「部下との関係性が劇的に改善し、チーム全体のパフォーマンスが向上しました」
+                                </h4>
+                                <div class="flex mb-3">
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-4 text-gray-600">
+                                <p>
+                                    <strong class="text-red-600">課題：</strong>
+                                    チームメンバーとのコミュニケーションがうまくいかず、離職率が高く、プロジェクトの進行にも支障をきたしていました。
+                                </p>
+                                <p>
+                                    <strong class="text-blue-600">受講内容：</strong>
+                                    「人を育てるリーダーシップ」セミナーと3ヶ月間の個人相談プログラムを受講。
+                                </p>
+                                <p>
+                                    <strong class="text-green-600">成果：</strong>
+                                    リーダーシップスタイルを根本から見直し、メンバーの自律性を重視するアプローチに変更。
+                                    その結果、チームの離職率が50%減少し、プロジェクトの成功率が80%向上しました。
+                                    上司からも高い評価を受け、昇進も果たしました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 2 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300" 
+                                 alt="佐藤花子様の写真" 
+                                 class="rounded-xl w-full shadow-lg"
+                                 loading="lazy">
+                            <div class="text-center mt-4">
+                                <h3 class="font-bold text-lg">佐藤 花子様</h3>
+                                <p class="text-gray-600">フリーランス コンサルタント</p>
+                                <div class="flex justify-center mt-2">
+                                    <span class="tag primary">クリエーティブクエスチョン</span>
+                                    <span class="tag">コミュニケーション</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="mb-6">
+                                <h4 class="text-xl font-bold mb-3 text-pink-600">
+                                    「クライアントからの信頼が深まり、収入が2倍になりました」
+                                </h4>
+                                <div class="flex mb-3">
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-4 text-gray-600">
+                                <p>
+                                    <strong class="text-red-600">課題：</strong>
+                                    クライアントの真のニーズを掴めず、提案が的外れになることが多く、契約継続率が低迷していました。
+                                </p>
+                                <p>
+                                    <strong class="text-blue-600">受講内容：</strong>
+                                    「クリエーティブクエスチョン」と「コミュニケーションの本質」セミナーを受講。
+                                </p>
+                                <p>
+                                    <strong class="text-green-600">成果：</strong>
+                                    質の高い問いを立てる技術を習得し、クライアントの潜在的なニーズを引き出せるように。
+                                    契約継続率が85%に向上し、紹介案件も増加。年収が前年比200%アップしました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 3 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" 
+                                 alt="山田健一様の写真" 
+                                 class="rounded-xl w-full shadow-lg"
+                                 loading="lazy">
+                            <div class="text-center mt-4">
+                                <h3 class="font-bold text-lg">山田 健一様</h3>
+                                <p class="text-gray-600">起業家</p>
+                                <div class="flex justify-center mt-2">
+                                    <span class="tag primary">包括的成長プログラム</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="mb-6">
+                                <h4 class="text-xl font-bold mb-3 text-green-600">
+                                    「事業の方向性が明確になり、売上が3倍に成長しました」
+                                </h4>
+                                <div class="flex mb-3">
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-4 text-gray-600">
+                                <p>
+                                    <strong class="text-red-600">課題：</strong>
+                                    起業して3年目でしたが、事業の方向性に迷いがあり、売上も伸び悩んでいました。
+                                </p>
+                                <p>
+                                    <strong class="text-blue-600">受講内容：</strong>
+                                    6ヶ月間の包括的成長プログラムを受講。複数のセミナーと継続的な個人相談を組み合わせ。
+                                </p>
+                                <p>
+                                    <strong class="text-green-600">成果：</strong>
+                                    手段目的ゲームで事業の本質的な目的を明確化し、メンタルモデルで意思決定プロセスを改善。
+                                    事業の焦点が絞れた結果、6ヶ月で売上が300%増加。従業員も5名から15名に拡大しました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials by Seminar -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    セミナー別<span class="gradient-text">お客様の声</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    各セミナーを受講された方々の体験談
+                </p>
+            </div>
+            
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center mb-8" data-aos="fade-up">
+                <button class="tab-button active border-b-2 border-blue-600 px-4 py-2 mx-2 mb-2" data-tab="leadership">リーダーシップ</button>
+                <button class="tab-button px-4 py-2 mx-2 mb-2" data-tab="creative">クリエーティブクエスチョン</button>
+                <button class="tab-button px-4 py-2 mx-2 mb-2" data-tab="communication">コミュニケーション</button>
+                <button class="tab-button px-4 py-2 mx-2 mb-2" data-tab="goodself">GoodSelf</button>
+                <button class="tab-button px-4 py-2 mx-2 mb-2" data-tab="other">その他</button>
+            </div>
+            
+            <!-- Tab Contents -->
+            <div class="tab-content" id="leadership">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">吉田 聡様</h4>
+                                <p class="text-sm text-gray-600">製造業 部長</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「部下との関わり方が180度変わりました。命令ではなく質問することで、
+                            メンバーが自分で考えて行動するようになり、チーム全体の生産性が大幅に向上しました。」
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">中村 美香様</h4>
+                                <p class="text-sm text-gray-600">教育機関 管理職</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「リーダーシップの本質を理解することができました。教職員のモチベーションが向上し、
+                            学校全体の雰囲気が良くなったと保護者の方からもお声をいただいています。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="creative">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">高橋 大輔様</h4>
+                                <p class="text-sm text-gray-600">広告代理店 クリエイティブディレクター</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「問いの立て方一つで、これほどアイデアの質が変わるとは思いませんでした。
+                            クライアントの課題により深くアプローチできるようになり、提案の採用率が格段に上がりました。」
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">小林 恵子様</h4>
+                                <p class="text-sm text-gray-600">コンサルタント</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「クライアントとの対話の質が大きく変わりました。表面的な課題ではなく、
+                            本質的な問題を見つけ出せるようになり、より価値の高いコンサルティングを提供できています。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="communication">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">鈴木 一郎様</h4>
+                                <p class="text-sm text-gray-600">営業職</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「お客様との信頼関係の築き方が根本的に変わりました。聞く技術を身につけたことで、
+                            お客様の真のニーズを理解でき、成約率が30%向上しました。」
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">森田 さくら様</h4>
+                                <p class="text-sm text-gray-600">人事担当</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「面接でのコミュニケーションが劇的に改善しました。応募者の本音を引き出せるようになり、
+                            採用後のミスマッチが大幅に減少しました。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="goodself">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">渡辺 雄太様</h4>
+                                <p class="text-sm text-gray-600">会社員</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「自分に対する見方が変わり、自信を持って行動できるようになりました。
+                            理想の自分と現在の自分を統合する方法を学べたことで、日々の充実感が全く違います。」
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">加藤 智美様</h4>
+                                <p class="text-sm text-gray-600">主婦・起業準備中</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「自己肯定感が大きく向上しました。長年抱えていた劣等感を克服し、
+                            ついに念願だった起業への一歩を踏み出すことができました。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="other">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">西川 博様</h4>
+                                <p class="text-sm text-gray-600">読書が楽しくなる読み方 受講</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「読書の概念が完全に変わりました。著者との対話を意識するようになってから、
+                            同じ本でも得られる学びが格段に深くなりました。」
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" 
+                                 alt="受講者写真" 
+                                 class="w-12 h-12 rounded-full mr-4"
+                                 loading="lazy">
+                            <div>
+                                <h4 class="font-bold">石田 みゆき様</h4>
+                                <p class="text-sm text-gray-600">メタ記憶術 受講</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600">
+                            「記憶のメカニズムを理解したことで、学習効率が劇的に向上しました。
+                            資格試験の勉強時間が半分になったのに、成績は過去最高でした。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Results -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    企業での<span class="gradient-text">導入事例</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    組織全体の変革を実現した企業様の成果
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Company Case 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i data-lucide="building-2" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">A製造業株式会社</h3>
+                            <p class="text-gray-600">従業員数：150名</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold mb-2">導入背景</h4>
+                            <p class="text-gray-600 text-sm">
+                                管理職のリーダーシップ不足により、部門間の連携が取れず、
+                                生産性の低下と離職率の上昇が課題となっていました。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">実施内容</h4>
+                            <p class="text-gray-600 text-sm">
+                                管理職20名に「人を育てるリーダーシップ」セミナーを実施。
+                                その後3ヶ月間の継続フォローアップを提供。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">成果</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>• 離職率：15% → 8% に改善</li>
+                                <li>• 生産性：20%向上</li>
+                                <li>• 従業員満足度：65% → 85% に向上</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Company Case 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i data-lucide="briefcase" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Bコンサルティング会社</h3>
+                            <p class="text-gray-600">従業員数：80名</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold mb-2">導入背景</h4>
+                            <p class="text-gray-600 text-sm">
+                                クライアントからの満足度が低下傾向にあり、
+                                コンサルタントの質問力と提案力の向上が急務でした。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">実施内容</h4>
+                            <p class="text-gray-600 text-sm">
+                                全コンサルタントに「クリエーティブクエスチョン」と
+                                「コミュニケーションの本質」セミナーを実施。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">成果</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>• クライアント満足度：75% → 92% に向上</li>
+                                <li>• 契約継続率：30%向上</li>
+                                <li>• 売上：前年比150%達成</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Testimonials -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    動画で見る<span class="gradient-text">お客様の声</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    実際の受講者の方に体験を語っていただきました
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Video Placeholder 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="zoom-in">
+                    <div class="aspect-video bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center relative">
+                        <i data-lucide="play" class="w-16 h-16 text-white"></i>
+                        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold mb-2">田中様インタビュー</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            リーダーシップセミナーを受講して、チーム運営が劇的に変わった体験談
+                        </p>
+                        <span class="tag primary">リーダーシップ</span>
+                    </div>
+                </div>
+                
+                <!-- Video Placeholder 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="aspect-video bg-gradient-to-r from-pink-400 to-pink-600 flex items-center justify-center relative">
+                        <i data-lucide="play" class="w-16 h-16 text-white"></i>
+                        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold mb-2">佐藤様インタビュー</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            個人相談プログラムで収入が2倍になった成功ストーリー
+                        </p>
+                        <span class="tag primary">個人相談</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                あなたも成功事例の一人になりませんか？
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                2,000名以上の方が体験した変化を、あなたも実感してください。
+                まずは無料相談から始めましょう。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    無料相談を申し込む
+                    <i data-lucide="calendar" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="services.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                    サービス一覧を見る
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

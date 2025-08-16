@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - manaolapule | toiee Lab認定パートナー</title>
+    <meta name="description" content="manaolapuleへのお問い合わせページ。セミナーの申し込み、個人相談の予約、企業研修のご相談など、お気軽にお問い合わせください。無料相談も承っております。">
+    <meta name="keywords" content="お問い合わせ,申し込み,相談,予約,企業研修,無料相談,manaolapule">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="お問い合わせ - manaolapule">
+    <meta property="og:description" content="セミナー申し込み、個人相談予約、企業研修相談など">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600">私たちについて</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600">サービス</a>
+                    <a href="testimonials.html" class="nav-link text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                    <a href="faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="contact.html" class="btn-primary font-bold">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="contact.html" class="block btn-primary text-center font-bold">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    お問い合わせ
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    セミナーの申し込み、個人相談の予約、ご質問など、お気軽にお問い合わせください
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Options -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    お問い合わせ<span class="gradient-text">タイプ</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    ご用件に応じて最適な窓口をお選びください
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Contact Type 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover" data-aos="zoom-in">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="calendar" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">無料相談予約</h3>
+                    <p class="text-gray-600 mb-6">
+                        どのセミナーが適しているか分からない方、個人相談を検討中の方
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <p class="text-sm text-blue-800 font-medium">60分無料・オンライン対応可</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Type 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="book" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">セミナー申し込み</h3>
+                    <p class="text-gray-600 mb-6">
+                        受講したいセミナーが決まっている方、日程を確認したい方
+                    </p>
+                    <div class="bg-green-50 rounded-lg p-4">
+                        <p class="text-sm text-green-800 font-medium">即日返信・日程調整可</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Type 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="building-2" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">企業研修相談</h3>
+                    <p class="text-gray-600 mb-6">
+                        法人での研修導入、カスタマイズ研修をご検討中の方
+                    </p>
+                    <div class="bg-purple-50 rounded-lg p-4">
+                        <p class="text-sm text-purple-800 font-medium">見積無料・打ち合わせ対応</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                        お問い合わせ<span class="gradient-text">フォーム</span>
+                    </h2>
+                    <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                        以下のフォームに必要事項をご記入ください
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="200">
+                    <form id="contact-form" class="space-y-6">
+                        <!-- Contact Type -->
+                        <div>
+                            <label class="block text-lg font-bold mb-3">お問い合わせ種別 <span class="text-red-500">*</span></label>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <label class="flex items-center space-x-3 p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="contact_type" value="consultation" required class="text-blue-600">
+                                    <span>無料相談予約</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="contact_type" value="seminar" required class="text-blue-600">
+                                    <span>セミナー申し込み</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="contact_type" value="corporate" required class="text-blue-600">
+                                    <span>企業研修相談</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="contact_type" value="other" required class="text-blue-600">
+                                    <span>その他のお問い合わせ</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Personal Information -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="last_name" class="block text-sm font-bold mb-2">お名前（姓） <span class="text-red-500">*</span></label>
+                                <input type="text" id="last_name" name="last_name" required 
+                                       class="form-input" placeholder="山田">
+                            </div>
+                            <div>
+                                <label for="first_name" class="block text-sm font-bold mb-2">お名前（名） <span class="text-red-500">*</span></label>
+                                <input type="text" id="first_name" name="first_name" required 
+                                       class="form-input" placeholder="太郎">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-bold mb-2">メールアドレス <span class="text-red-500">*</span></label>
+                                <input type="email" id="email" name="email" required 
+                                       class="form-input" placeholder="example@email.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-bold mb-2">電話番号</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       class="form-input" placeholder="090-1234-5678">
+                            </div>
+                        </div>
+                        
+                        <!-- Company Information -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="company" class="block text-sm font-bold mb-2">会社名・組織名</label>
+                                <input type="text" id="company" name="company" 
+                                       class="form-input" placeholder="株式会社○○">
+                            </div>
+                            <div>
+                                <label for="position" class="block text-sm font-bold mb-2">役職・部署</label>
+                                <input type="text" id="position" name="position" 
+                                       class="form-input" placeholder="営業部 主任">
+                            </div>
+                        </div>
+                        
+                        <!-- Seminar Selection (conditional) -->
+                        <div id="seminar-selection" class="hidden">
+                            <label class="block text-sm font-bold mb-2">ご希望のセミナー <span class="text-red-500">*</span></label>
+                            <select name="seminar" class="form-input">
+                                <option value="">選択してください</option>
+                                <option value="creative-question">クリエーティブクエスチョン</option>
+                                <option value="leadership">人を育てるリーダーシップ</option>
+                                <option value="communication">コミュニケーションの本質</option>
+                                <option value="goodself">GoodSelfイメージ統合法</option>
+                                <option value="means-purpose">手段目的ゲーム</option>
+                                <option value="meta-memory">メタ記憶術</option>
+                                <option value="reflection">次につながる振り返りの技術</option>
+                                <option value="reading">読書が楽しくなる読み方</option>
+                                <option value="mental-model">メンタルモデルとデシジョンメーキング</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Consultation Type (conditional) -->
+                        <div id="consultation-type" class="hidden">
+                            <label class="block text-sm font-bold mb-2">個人相談のタイプ</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="consultation_plan" value="spot" class="text-blue-600">
+                                    <span>スポット相談（120分・25,000円）</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="consultation_plan" value="short" class="text-blue-600">
+                                    <span>短期集中プログラム（3ヶ月・120,000円）</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="consultation_plan" value="comprehensive" class="text-blue-600">
+                                    <span>包括的成長プログラム（6ヶ月・200,000円）</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="consultation_plan" value="undecided" class="text-blue-600">
+                                    <span>まずは相談して決めたい</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Corporate Training Details (conditional) -->
+                        <div id="corporate-details" class="hidden space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="participants" class="block text-sm font-bold mb-2">想定参加者数</label>
+                                    <select name="participants" class="form-input">
+                                        <option value="">選択してください</option>
+                                        <option value="5-10">5-10名</option>
+                                        <option value="11-20">11-20名</option>
+                                        <option value="21-50">21-50名</option>
+                                        <option value="51-100">51-100名</option>
+                                        <option value="100+">100名以上</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="budget" class="block text-sm font-bold mb-2">ご予算（目安）</label>
+                                    <select name="budget" class="form-input">
+                                        <option value="">選択してください</option>
+                                        <option value="under-500k">50万円未満</option>
+                                        <option value="500k-1m">50-100万円</option>
+                                        <option value="1m-2m">100-200万円</option>
+                                        <option value="2m+">200万円以上</option>
+                                        <option value="flexible">相談の上決定</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="training_goals" class="block text-sm font-bold mb-2">研修の目的・期待する効果</label>
+                                <textarea name="training_goals" rows="3" class="form-input" 
+                                          placeholder="例：管理職のリーダーシップ向上、チームコミュニケーションの改善など"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Preferred Contact Method -->
+                        <div>
+                            <label class="block text-sm font-bold mb-2">ご希望の連絡方法</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="contact_method[]" value="email" class="text-blue-600">
+                                    <span>メール</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="contact_method[]" value="phone" class="text-blue-600">
+                                    <span>電話</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="contact_method[]" value="zoom" class="text-blue-600">
+                                    <span>オンライン面談</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Preferred Time -->
+                        <div>
+                            <label class="block text-sm font-bold mb-2">ご希望の連絡時間帯</label>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="preferred_time[]" value="morning" class="text-blue-600">
+                                    <span>午前（9:00-12:00）</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="preferred_time[]" value="afternoon" class="text-blue-600">
+                                    <span>午後（13:00-17:00）</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" name="preferred_time[]" value="evening" class="text-blue-600">
+                                    <span>夕方（18:00-20:00）</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- How did you hear about us -->
+                        <div>
+                            <label for="referral_source" class="block text-sm font-bold mb-2">manaolapuleを何で知りましたか？</label>
+                            <select name="referral_source" class="form-input">
+                                <option value="">選択してください</option>
+                                <option value="google">Google検索</option>
+                                <option value="sns">SNS（Facebook、Twitter等）</option>
+                                <option value="referral">知人・友人の紹介</option>
+                                <option value="toieelab">toiee Labからの紹介</option>
+                                <option value="seminar">他のセミナー・イベント</option>
+                                <option value="media">雑誌・メディア</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-bold mb-2">お問い合わせ内容・ご質問 <span class="text-red-500">*</span></label>
+                            <textarea name="message" id="message" rows="6" required class="form-input" 
+                                      placeholder="具体的なお問い合わせ内容、ご質問、ご要望などをお聞かせください。"></textarea>
+                        </div>
+                        
+                        <!-- Privacy Policy -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <label class="flex items-start space-x-3">
+                                <input type="checkbox" name="privacy_agreement" required class="text-blue-600 mt-1">
+                                <span class="text-sm text-gray-600">
+                                    <span class="font-bold">個人情報の取り扱いについて</span><br>
+                                    ご入力いただいた個人情報は、お問い合わせへの回答、サービス提供、
+                                    セミナー・イベントのご案内にのみ使用いたします。
+                                    第三者への提供は一切行いません。
+                                    <a href="#" class="text-blue-600 hover:underline">プライバシーポリシーの詳細</a>
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="text-center pt-6">
+                            <button type="submit" class="btn-primary px-12 py-4 text-lg font-bold inline-flex items-center">
+                                <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+                                送信する
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Information -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    その他の<span class="gradient-text">お問い合わせ方法</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Phone -->
+                <div class="text-center" data-aos="zoom-in">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="phone" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">お電話でのお問い合わせ</h3>
+                    <p class="text-2xl font-bold text-blue-600 mb-2">03-1234-5678</p>
+                    <p class="text-gray-600 mb-4">
+                        受付時間：平日 9:00-18:00<br>
+                        （土日祝日は休業）
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        ※セミナー開催中は電話に出られない場合があります
+                    </p>
+                </div>
+                
+                <!-- Email -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="mail" class="w-10 h-10 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">メールでのお問い合わせ</h3>
+                    <p class="text-xl font-bold text-green-600 mb-2">info@manaolapule.com</p>
+                    <p class="text-gray-600 mb-4">
+                        24時間受付<br>
+                        24時間以内にご返信します
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        ※土日祝日のお問い合わせは翌営業日のご返信となります
+                    </p>
+                </div>
+                
+                <!-- Location -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="map-pin" class="w-10 h-10 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">所在地</h3>
+                    <p class="text-lg font-bold text-purple-600 mb-2">東京オフィス</p>
+                    <p class="text-gray-600 mb-4">
+                        〒150-0001<br>
+                        東京都渋谷区神宮前1-2-3<br>
+                        ラーニングビル5F
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        ※来社の際は事前にご連絡ください
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Response Time -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                    迅速な対応をお約束します
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div data-aos="zoom-in">
+                        <div class="text-3xl font-bold mb-2">24時間以内</div>
+                        <p>メールでのご返信</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-3xl font-bold mb-2">当日-翌日</div>
+                        <p>お電話でのご連絡</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-3xl font-bold mb-2">3営業日以内</div>
+                        <p>詳細な提案書作成</p>
+                    </div>
+                </div>
+                <p class="text-lg" data-aos="fade-up" data-aos-delay="300">
+                    お急ぎの場合は、お電話でのお問い合わせをおすすめします。<br>
+                    担当者が直接対応し、その場でご相談にお答えします。
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Form conditional logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactTypeRadios = document.querySelectorAll('input[name="contact_type"]');
+            const seminarSelection = document.getElementById('seminar-selection');
+            const consultationType = document.getElementById('consultation-type');
+            const corporateDetails = document.getElementById('corporate-details');
+            
+            contactTypeRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Hide all conditional sections
+                    seminarSelection.classList.add('hidden');
+                    consultationType.classList.add('hidden');
+                    corporateDetails.classList.add('hidden');
+                    
+                    // Show relevant section
+                    if (this.value === 'seminar') {
+                        seminarSelection.classList.remove('hidden');
+                        seminarSelection.querySelector('select').required = true;
+                    } else if (this.value === 'consultation') {
+                        consultationType.classList.remove('hidden');
+                    } else if (this.value === 'corporate') {
+                        corporateDetails.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

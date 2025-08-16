@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コミュニケーションの本質 - 伝えるから、つながるへ。理解するから、共感するへ。| manaolapule</title>
+    <meta name="description" content="表面的なテクニックを超えた、心と心をつなぐコミュニケーションの真髄を探求。聞く力、伝える力、そして相互理解を深める実践的スキルを身につけます。">
+    <meta name="keywords" content="コミュニケーション,対話,共感,セミナー,toiee Lab,Beyond Learning">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="コミュニケーションの本質 - 伝えるから、つながるへ。">
+    <meta property="og:description" content="心と心をつなぐコミュニケーションの真髄を学ぶセミナー">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="../about.html" class="nav-link text-gray-700 hover:text-blue-600">私たちについて</a>
+                    <a href="../services.html" class="nav-link text-gray-700 hover:text-blue-600">サービス</a>
+                    <a href="../testimonials.html" class="nav-link text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                    <a href="../faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="../contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="../index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="../about.html" class="block py-2 text-gray-700 hover:text-blue-600">私たちについて</a>
+                <a href="../services.html" class="block py-2 text-gray-700 hover:text-blue-600">サービス</a>
+                <a href="../testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                <a href="../faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="../contact.html" class="block btn-primary text-center">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Breadcrumb -->
+    <section class="pt-32 pb-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm" aria-label="パンくずリスト">
+                <ol class="flex items-center space-x-2">
+                    <li><a href="../index.html" class="text-gray-500 hover:text-blue-600">ホーム</a></li>
+                    <li class="text-gray-400">/</li>
+                    <li><a href="../services.html" class="text-gray-500 hover:text-blue-600">サービス</a></li>
+                    <li class="text-gray-400">/</li>
+                    <li class="text-gray-900 font-medium">コミュニケーションの本質</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-16 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="bg-green-100 rounded-lg inline-flex items-center px-4 py-2 mb-6">
+                        <i data-lucide="message-square" class="w-5 h-5 text-green-600 mr-2"></i>
+                        <span class="text-sm font-medium text-green-800">2日間セミナー</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        コミュニケーション<br>
+                        <span class="gradient-text">の本質</span>
+                    </h1>
+                    
+                    <p class="text-2xl text-green-600 font-medium mb-6">
+                        伝えるから、つながるへ。理解するから、共感するへ。
+                    </p>
+                    
+                    <p class="text-lg text-gray-600 mb-8">
+                        表面的なテクニックを超えた、心と心をつなぐコミュニケーションの真髄を探求。
+                        聞く力、伝える力、そして相互理解を深める実践的スキルを身につけます。
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#booking" class="btn-primary inline-flex items-center justify-center">
+                            今すぐ申し込む
+                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                        </a>
+                        <a href="#details" class="inline-flex items-center justify-center px-6 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition">
+                            詳細を見る
+                            <i data-lucide="info" class="w-5 h-5 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" class="relative">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800" 
+                         alt="コミュニケーションセミナーの様子" 
+                         class="rounded-2xl shadow-2xl"
+                         loading="lazy">
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">96%</div>
+                            <div class="text-sm text-gray-600">関係性改善実感率</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    このセミナーで習得する<span class="gradient-text">3つの力</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="ear" class="w-10 h-10 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">深層傾聴力</h3>
+                    <p class="text-gray-600">
+                        相手の言葉の奥にある真意や感情を読み取り、本質的な理解を深める傾聴技術を身につけます。
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="heart" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">共感創造力</h3>
+                    <p class="text-gray-600">
+                        相手の立場や感情に寄り添い、真の共感を生み出すことで、信頼関係を築く力を習得します。
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="zap" class="w-10 h-10 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">対話促進力</h3>
+                    <p class="text-gray-600">
+                        建設的な対話を生み出し、互いの理解を深めながら、創造的な解決策を見つける力を養います。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Communication Levels -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                    コミュニケーションの<span class="gradient-text">深度</span>
+                </h2>
+                
+                <div class="space-y-8">
+                    <!-- Level 1 -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up">
+                        <div class="grid md:grid-cols-4 gap-6 items-center">
+                            <div class="text-center">
+                                <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                                    <span class="text-2xl font-bold text-red-600">1</span>
+                                </div>
+                                <h3 class="font-bold text-red-600">表面的な交流</h3>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-bold mb-2">情報の単純な伝達</h4>
+                                <p class="text-gray-600 mb-2">
+                                    事実や情報の一方的な伝達。相手の感情や背景を考慮せず、表面的なやり取りに留まる段階。
+                                </p>
+                                <p class="text-sm text-red-600">→ 誤解や対立が生まれやすい</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Level 2 -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid md:grid-cols-4 gap-6 items-center">
+                            <div class="text-center">
+                                <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                                    <span class="text-2xl font-bold text-yellow-600">2</span>
+                                </div>
+                                <h3 class="font-bold text-yellow-600">感情の認識</h3>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-bold mb-2">相手の感情を理解する</h4>
+                                <p class="text-gray-600 mb-2">
+                                    言葉だけでなく、相手の感情や状況を理解しようとする段階。傾聴の基本技術を活用。
+                                </p>
+                                <p class="text-sm text-yellow-600">→ より円滑なコミュニケーションが可能</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Level 3 -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="grid md:grid-cols-4 gap-6 items-center">
+                            <div class="text-center">
+                                <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                                    <span class="text-2xl font-bold text-blue-600">3</span>
+                                </div>
+                                <h3 class="font-bold text-blue-600">共感的理解</h3>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-bold mb-2">相手の立場に立つ</h4>
+                                <p class="text-gray-600 mb-2">
+                                    相手の視点から物事を見て、その感情や考えを深く理解し、共感を示すことができる段階。
+                                </p>
+                                <p class="text-sm text-blue-600">→ 信頼関係が深まり、協力的な関係を築ける</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Level 4 -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-green-600" data-aos="fade-up" data-aos-delay="300">
+                        <div class="grid md:grid-cols-4 gap-6 items-center">
+                            <div class="text-center">
+                                <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
+                                    <span class="text-2xl font-bold text-green-600">4</span>
+                                </div>
+                                <h3 class="font-bold text-green-600">創造的対話</h3>
+                            </div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-bold mb-2">新しい可能性を生み出す</h4>
+                                <p class="text-gray-600 mb-2">
+                                    互いの理解を基盤に、新しいアイデアや解決策を共創する段階。お互いが成長し合える関係性。
+                                </p>
+                                <p class="text-sm text-green-600">→ 革新的なアイデアと深い絆が生まれる（目標レベル）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Learning Objectives -->
+    <section id="details" class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                    学習目標と<span class="gradient-text">成果</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-6">こんな方におすすめ</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+                                <span>人間関係を改善したいビジネスパーソン</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+                                <span>チーム内の連携を強化したいリーダー</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+                                <span>顧客との関係性を深めたい営業・接客業の方</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+                                <span>コーチ・カウンセラー・コンサルタント</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+                                <span>家族や友人との関係を向上させたい方</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-6">期待できる成果</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2 text-green-600">短期的成果（セミナー後すぐ）</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• 傾聴技術の基本スキル習得</li>
+                                    <li>• 相手の感情を読み取る力の向上</li>
+                                    <li>• 自分のコミュニケーションパターンの理解</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2 text-blue-600">中期的成果（1-3ヶ月後）</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• 職場での人間関係の大幅改善</li>
+                                    <li>• 顧客満足度の向上</li>
+                                    <li>• 会議やプロジェクトの効率化</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2 text-purple-600">長期的成果（3ヶ月以降）</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• 信頼関係に基づく強固なネットワーク構築</li>
+                                    <li>• 創造的な協力関係の創出</li>
+                                    <li>• 人生全般での充実感の向上</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Program Structure -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                    プログラム<span class="gradient-text">構成</span>
+                </h2>
+                
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4">1</div>
+                            <h3 class="text-2xl font-bold">1日目：コミュニケーションの基盤構築</h3>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-4 text-green-600">午前セッション（10:00-12:30）</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li>• コミュニケーションの本質理解</li>
+                                    <li>• 自分のコミュニケーションスタイル診断</li>
+                                    <li>• 傾聴の4つのレベルを体験</li>
+                                    <li>• ペアワーク：基本的な傾聴練習</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-4 text-green-600">午後セッション（13:30-17:00）</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li>• 非言語コミュニケーションの理解</li>
+                                    <li>• 感情の読み取りと共感のスキル</li>
+                                    <li>• ロールプレイ：困難な対話状況</li>
+                                    <li>• フィードバックとリフレクション</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4">2</div>
+                            <h3 class="text-2xl font-bold">2日目：深い対話と創造的コミュニケーション</h3>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-4 text-blue-600">午前セッション（10:00-12:30）</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li>• 建設的な対話の作り方</li>
+                                    <li>• 価値観や文化の違いを越える技術</li>
+                                    <li>• 対立を協力に変える対話技法</li>
+                                    <li>• グループワーク：課題解決対話</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-4 text-blue-600">午後セッション（13:30-17:00）</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li>• 創造的対話による共創プロセス</li>
+                                    <li>• 関係性を深める継続的なコミュニケーション</li>
+                                    <li>• 実践計画の策定</li>
+                                    <li>• パートナーとの相互コミット</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Info -->
+                <div class="mt-12 grid md:grid-cols-3 gap-6">
+                    <div class="text-center bg-green-50 p-6 rounded-lg">
+                        <i data-lucide="clock" class="w-8 h-8 text-green-600 mx-auto mb-3"></i>
+                        <h4 class="font-bold mb-2">開催時間</h4>
+                        <p class="text-gray-600">2日間<br>各日10:00-17:00</p>
+                    </div>
+                    <div class="text-center bg-blue-50 p-6 rounded-lg">
+                        <i data-lucide="users" class="w-8 h-8 text-blue-600 mx-auto mb-3"></i>
+                        <h4 class="font-bold mb-2">定員</h4>
+                        <p class="text-gray-600">最大14名<br>少人数制</p>
+                    </div>
+                    <div class="text-center bg-purple-50 p-6 rounded-lg">
+                        <i data-lucide="monitor" class="w-8 h-8 text-purple-600 mx-auto mb-3"></i>
+                        <h4 class="font-bold mb-2">開催形式</h4>
+                        <p class="text-gray-600">対面 / オンライン<br>両対応</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">
+                    受講料金と<span class="gradient-text">お申し込み</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Individual -->
+                    <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold mb-4">個人受講</h3>
+                            <div class="text-4xl font-bold text-green-600 mb-6">
+                                ¥42,000
+                                <span class="text-lg text-gray-500 font-normal">（税込）</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8">
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>2日間のセミナー参加</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>コミュニケーションスタイル診断</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>実践ワークブック</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>1ヶ月間練習パートナーシステム</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>修了証書の発行</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="btn-primary w-full">
+                                今すぐ申し込む
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Corporate -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-green-600" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <div class="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+                                チーム推奨
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">企業研修</h3>
+                            <div class="text-4xl font-bold text-green-600 mb-6">
+                                ¥34,000
+                                <span class="text-lg text-gray-500 font-normal">（税込/人）</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8">
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>5名以上で適用</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>チームダイナミクス分析</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>組織課題に応じたカスタマイズ</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>3ヶ月間フォローアップ</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                    <span>チーム関係性レポート</span>
+                                </li>
+                            </ul>
+                            <a href="../contact.html" class="btn-primary w-full">
+                                お見積もり依頼
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center text-gray-600">
+                    <p class="mb-4">※ 早期申込み割引（開催1ヶ月前まで）：10%OFF</p>
+                    <p>※ toiee Lab Online受講者割引：15%OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    受講者の<span class="gradient-text">声</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">佐藤 花子様</h4>
+                            <p class="text-sm text-gray-600">営業部マネージャー</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「顧客との関係性が劇的に変わりました。以前は商品の説明ばかりしていましたが、
+                        お客様の本当のニーズを聞けるようになってから、成約率が40%向上しました。
+                        何より、お客様から『話しやすい』と言われることが増え、リピート率も大幅にアップしています。」
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">田中 太郎様</h4>
+                            <p class="text-sm text-gray-600">プロジェクトマネージャー</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「チーム内のコミュニケーションが激変しました。メンバー同士がより深く理解し合えるようになり、
+                        プロジェクトの進行がスムーズになっただけでなく、新しいアイデアが続々と生まれるようになりました。
+                        チーム全体の雰囲気も明るくなり、残業時間も20%削減できました。」
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">山田 美咲様</h4>
+                            <p class="text-sm text-gray-600">カウンセラー</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「プロとしてのコミュニケーション力が格段に向上しました。クライアントとの信頼関係がより早く築けるようになり、
+                        セッションの効果も大幅に改善されています。特に、相手の感情の奥にある真のニーズを
+                        読み取る力が身についたことで、より深いサポートができるようになりました。」
+                    </p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">鈴木 健一様</h4>
+                            <p class="text-sm text-gray-600">人事部長</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「組織全体の研修として実施しました。部署間の連携が大幅に改善され、
+                        以前は対立しがちだった部門同士が協力して新しいプロジェクトを立ち上げるまでになりました。
+                        従業員満足度調査でも、コミュニケーションに関する項目が全て向上し、離職率も30%改善しました。」
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                    よくある<span class="gradient-text">質問</span>
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item bg-white rounded-lg p-6 shadow-md">
+                        <div class="faq-question flex justify-between items-center cursor-pointer">
+                            <h3 class="font-bold text-lg">コミュニケーションが苦手でも参加できますか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600">
+                            <p>むしろ、コミュニケーションに課題を感じている方にこそ受講していただきたいセミナーです。少人数制で安心できる環境を作り、段階的にスキルを身につけていただけるよう設計されています。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-white rounded-lg p-6 shadow-md">
+                        <div class="faq-question flex justify-between items-center cursor-pointer">
+                            <h3 class="font-bold text-lg">オンラインでも十分な効果が得られますか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600">
+                            <p>はい。オンライン版では、ブレイクアウトルームを活用した少人数での対話練習や、画面越しでのコミュニケーション技術も学べます。むしろオンラインならではのスキルも身につくメリットがあります。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-white rounded-lg p-6 shadow-md">
+                        <div class="faq-question flex justify-between items-center cursor-pointer">
+                            <h3 class="font-bold text-lg">どのくらいで効果を実感できますか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600">
+                            <p>多くの受講者が1週間以内に変化を実感されています。2週間後には周囲の人から「話しやすくなった」「理解してもらえている感じがする」といった反応をもらうことが多いです。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-white rounded-lg p-6 shadow-md">
+                        <div class="faq-question flex justify-between items-center cursor-pointer">
+                            <h3 class="font-bold text-lg">練習パートナーシステムとは何ですか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600">
+                            <p>セミナー受講者同士でペアを組み、1ヶ月間定期的に練習する仕組みです。月2回のオンライン練習会も開催し、学習内容の定着をサポートします。一人では続かない練習も、パートナーがいることで継続しやすくなります。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item bg-white rounded-lg p-6 shadow-md">
+                        <div class="faq-question flex justify-between items-center cursor-pointer">
+                            <h3 class="font-bold text-lg">プライベートでも効果がありますか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600">
+                            <p>はい、むしろプライベートでの効果を実感される方が多いです。家族や友人との関係が深まり、より充実した人間関係を築けるようになります。恋愛関係やパートナーシップにも良い影響をもたらすことが多いです。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Booking Form -->
+    <section id="booking" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+                    お申し込み<span class="gradient-text">フォーム</span>
+                </h2>
+                
+                <form class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-6">
+                        <!-- Course Type -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">受講タイプ</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="course_type" value="individual" class="mr-3" checked>
+                                    <span>個人受講（¥42,000）</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="course_type" value="corporate" class="mr-3">
+                                    <span>企業研修（お見積もり）</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Format -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">受講形式</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="format" value="online" class="mr-3" checked>
+                                    <span>オンライン</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="format" value="offline" class="mr-3">
+                                    <span>対面（東京会場）</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Personal Info -->
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="last_name" class="block text-sm font-bold text-gray-700 mb-2">姓</label>
+                                <input type="text" id="last_name" name="last_name" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="first_name" class="block text-sm font-bold text-gray-700 mb-2">名</label>
+                                <input type="text" id="first_name" name="first_name" required class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-gray-700 mb-2">メールアドレス</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">電話番号</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-bold text-gray-700 mb-2">会社名・組織名</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div>
+                            <label for="position" class="block text-sm font-bold text-gray-700 mb-2">役職・職種</label>
+                            <input type="text" id="position" name="position" class="form-input">
+                        </div>
+                        
+                        <!-- Communication Challenge -->
+                        <div>
+                            <label for="communication_challenge" class="block text-sm font-bold text-gray-700 mb-2">現在のコミュニケーションの課題</label>
+                            <textarea id="communication_challenge" name="communication_challenge" rows="3" class="form-input" placeholder="人間関係や対話で困っていることをお聞かせください"></textarea>
+                        </div>
+                        
+                        <!-- Motivation -->
+                        <div>
+                            <label for="motivation" class="block text-sm font-bold text-gray-700 mb-2">受講の動機・期待すること</label>
+                            <textarea id="motivation" name="motivation" rows="4" class="form-input" placeholder="このセミナーを受講しようと思った理由や、期待することをお聞かせください"></textarea>
+                        </div>
+                        
+                        <!-- Practice Partner Preference -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">練習パートナーシステム</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="practice_partner" value="yes" class="mr-3" checked>
+                                    <span>参加を希望する</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="practice_partner" value="no" class="mr-3">
+                                    <span>参加しない</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Special Requests -->
+                        <div>
+                            <label for="requests" class="block text-sm font-bold text-gray-700 mb-2">特別な配慮・要望</label>
+                            <textarea id="requests" name="requests" rows="2" class="form-input" placeholder="食事制限、アクセシビリティ対応など"></textarea>
+                        </div>
+                        
+                        <!-- Privacy Policy -->
+                        <div>
+                            <label class="flex items-start">
+                                <input type="checkbox" name="privacy_agreement" required class="mt-1 mr-3">
+                                <span class="text-sm text-gray-600">
+                                    <a href="#" class="text-blue-600 hover:underline">プライバシーポリシー</a>および
+                                    <a href="#" class="text-blue-600 hover:underline">利用規約</a>に同意します
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <!-- Submit -->
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary px-12 py-4 text-lg">
+                                申し込みを送信する
+                            </button>
+                        </div>
+                        
+                        <div class="text-center text-sm text-gray-600">
+                            <p>送信後、2営業日以内にご連絡いたします</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Seminars -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    関連する<span class="gradient-text">セミナー</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    コミュニケーション力をさらに高めるために
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Related Seminar 1 -->
+                <div class="seminar-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-pink-100 rounded-lg p-3">
+                            <i data-lucide="users" class="w-6 h-6 text-pink-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">人を育てるリーダーシップ</h3>
+                            <p class="text-sm text-gray-600 mb-3">命令ではなく、成長を。</p>
+                            <p class="text-xs text-gray-500 mb-3">
+                                深いコミュニケーション力を活かして、支援型のリーダーシップを発揮します。
+                            </p>
+                            <a href="leadership.html" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                                詳細を見る →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Seminar 2 -->
+                <div class="seminar-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 rounded-lg p-3">
+                            <i data-lucide="help-circle" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">クリエーティブクエスチョン</h3>
+                            <p class="text-sm text-gray-600 mb-3">問いが変わる。創造が始まる。</p>
+                            <p class="text-xs text-gray-500 mb-3">
+                                質の高い質問技術で、より深い対話とコミュニケーションを実現します。
+                            </p>
+                            <a href="creative-question.html" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                                詳細を見る →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Seminar 3 -->
+                <div class="seminar-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 rounded-lg p-3">
+                            <i data-lucide="star" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg mb-2">GoodSelfイメージ統合法</h3>
+                            <p class="text-sm text-gray-600 mb-3">理想の自分に、なる。</p>
+                            <p class="text-xs text-gray-500 mb-3">
+                                自己理解を深めることで、より自信を持ったコミュニケーションができるようになります。
+                            </p>
+                            <a href="goodself.html" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                                詳細を見る →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="../services.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    すべてのセミナーを見る
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="../consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="../testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="../faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i[data-lucide="chevron-down"]');
+                
+                if (answer.classList.contains('active')) {
+                    answer.classList.remove('active');
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(a => {
+                        a.classList.remove('active');
+                    });
+                    document.querySelectorAll('.faq-question i[data-lucide="chevron-down"]').forEach(i => {
+                        i.style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Open clicked answer
+                    answer.classList.add('active');
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

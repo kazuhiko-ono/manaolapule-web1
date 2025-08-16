@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人相談 - manaolapule | toiee Lab認定パートナー</title>
+    <meta name="description" content="manaolapuleの個人相談サービス。あなたの課題に合わせたカスタマイズされた1対1の学習支援で、確実な成長を実現します。初回相談は無料です。">
+    <meta name="keywords" content="個人相談,1対1,カスタマイズ,学習支援,コーチング,toiee Lab,manaolapule">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="個人相談 - manaolapule">
+    <meta property="og:description" content="あなたの課題に合わせたカスタマイズされた1対1の学習支援">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600">ホーム</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600">私たちについて</a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600">サービス</a>
+                    <a href="testimonials.html" class="nav-link text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                    <a href="faq.html" class="nav-link text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">manaolapule</span>
+                <button id="mobile-menu-close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">ホーム</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">私たちについて</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">サービス</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600">実績・お客様の声</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="contact.html" class="block btn-primary text-center">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    個人相談
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    あなただけのための学習支援 - 1対1で向き合う成長プログラム
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Overview -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <div class="bg-blue-100 rounded-lg inline-flex items-center px-3 py-1 mb-4">
+                            <i data-lucide="heart" class="w-4 h-4 text-blue-600 mr-2"></i>
+                            <span class="text-sm font-medium text-blue-800">One-on-One Support</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                            あなたの成長に<br>
+                            <span class="gradient-text">真剣に向き合います</span>
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            個人相談では、あなたの具体的な課題や目標に焦点を当てて、
+                            完全にカスタマイズされた学習体験を提供します。
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
+                                <span>個別課題の深い分析と解決策の提案</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
+                                <span>あなた専用の学習プログラム設計</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
+                                <span>継続的なフォローアップとサポート</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" 
+                             alt="個人相談の様子" 
+                             class="rounded-2xl shadow-2xl"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    個人相談の<span class="gradient-text">プロセス</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    4つのステップであなたの成長をサポート
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right">
+                        <div class="step-indicator active">1</div>
+                        <div class="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold mb-3">初回無料相談（60分）</h3>
+                            <p class="text-gray-600 mb-4">
+                                まずは現在の状況、課題、目標について詳しくお聞きします。
+                                どのような支援が必要か、一緒に見極めていきましょう。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">現状分析</span>
+                                <span class="tag">目標設定</span>
+                                <span class="tag">課題特定</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="100">
+                        <div class="step-indicator">2</div>
+                        <div class="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold mb-3">カスタム学習プラン設計</h3>
+                            <p class="text-gray-600 mb-4">
+                                初回相談の内容を基に、あなた専用の学習プランを設計します。
+                                最適なセミナーの組み合わせや個別セッションの内容を提案します。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">プラン設計</span>
+                                <span class="tag">スケジュール調整</span>
+                                <span class="tag">教材選定</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="step-indicator">3</div>
+                        <div class="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold mb-3">個別セッション実施</h3>
+                            <p class="text-gray-600 mb-4">
+                                1対1の集中セッションで、課題に深く取り組みます。
+                                理論学習と実践ワークを組み合わせて、確実な変化を生み出します。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">1対1セッション</span>
+                                <span class="tag">実践ワーク</span>
+                                <span class="tag">即時フィードバック</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-6" data-aos="fade-right" data-aos-delay="300">
+                        <div class="step-indicator">4</div>
+                        <div class="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold mb-3">継続フォローアップ</h3>
+                            <p class="text-gray-600 mb-4">
+                                セッション後も継続的にサポートします。学んだことを実践で活かし、
+                                さらなる成長につなげるためのフォローアップを提供します。
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag">進捗確認</span>
+                                <span class="tag">追加サポート</span>
+                                <span class="tag">継続プラン</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Types of Consultation -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    相談の<span class="gradient-text">タイプ</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    あなたのニーズに合わせた3つのスタイル
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Type 1: Single Session -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="zap" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">スポット相談</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        特定の課題について集中的に取り組む単発セッション
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-blue-600"></i>
+                            <span class="text-sm">120分 × 1回</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="target" class="w-4 h-4 text-blue-600"></i>
+                            <span class="text-sm">課題解決フォーカス</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="file-text" class="w-4 h-4 text-blue-600"></i>
+                            <span class="text-sm">アクションプラン提供</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-blue-600 mb-2">¥25,000</p>
+                        <p class="text-sm text-gray-500">初回無料相談含む</p>
+                    </div>
+                </div>
+                
+                <!-- Type 2: Short Program -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border-2 border-blue-200" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-pink-600"></i>
+                    </div>
+                    <div class="text-center mb-4">
+                        <span class="tag primary">人気No.1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">短期集中プログラム</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        3ヶ月間の集中的な成長プログラム
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-pink-600"></i>
+                            <span class="text-sm">90分 × 6回（3ヶ月）</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="book" class="w-4 h-4 text-pink-600"></i>
+                            <span class="text-sm">セミナー受講割引</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-pink-600"></i>
+                            <span class="text-sm">メールサポート</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-pink-600 mb-2">¥120,000</p>
+                        <p class="text-sm text-gray-500">月額¥40,000</p>
+                    </div>
+                </div>
+                
+                <!-- Type 3: Long Program -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i data-lucide="star" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">包括的成長プログラム</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        6ヶ月間の本格的な変革プログラム
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-sm">90分 × 12回（6ヶ月）</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="gift" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-sm">セミナー受け放題</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-sm">24時間サポート</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-green-600 mb-2">¥200,000</p>
+                        <p class="text-sm text-gray-500">月額¥33,333</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    個人相談の<span class="gradient-text">メリット</span>
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    1対1だからこそ実現できる価値
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Benefit 1 -->
+                <div class="flex items-start space-x-4" data-aos="fade-right">
+                    <div class="bg-blue-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="eye" class="w-6 h-6 text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">深い洞察と理解</h3>
+                        <p class="text-gray-600">
+                            あなたの状況を深く理解し、表面的な課題だけでなく
+                            根本的な問題にアプローチします。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex items-start space-x-4" data-aos="fade-left">
+                    <div class="bg-pink-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="settings" class="w-6 h-6 text-pink-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">完全カスタマイズ</h3>
+                        <p class="text-gray-600">
+                            あなたの学習スタイル、ペース、目標に完全に合わせた
+                            オーダーメイドのプログラムを提供します。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex items-start space-x-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="shield" class="w-6 h-6 text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">安心できる環境</h3>
+                        <p class="text-gray-600">
+                            1対1の安全な環境で、他人の目を気にすることなく
+                            率直に話し、学ぶことができます。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex items-start space-x-4" data-aos="fade-left" data-aos-delay="100">
+                    <div class="bg-purple-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="fast-forward" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">加速された成長</h3>
+                        <p class="text-gray-600">
+                            個別の集中的なサポートにより、グループ学習よりも
+                            はるかに早い成長を実現できます。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="flex items-start space-x-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="bg-yellow-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="calendar" class="w-6 h-6 text-yellow-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">柔軟なスケジュール</h3>
+                        <p class="text-gray-600">
+                            あなたの都合に合わせてセッション時間を調整。
+                            忙しい中でも学習を継続できます。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="flex items-start space-x-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+                        <i data-lucide="infinity" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">継続的な関係</h3>
+                        <p class="text-gray-600">
+                            一時的な指導ではなく、長期的なパートナーとして
+                            あなたの成長を見守り続けます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                    個人相談を受けた方の<span class="gradient-text">声</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">吉田 聡様</h4>
+                            <p class="text-sm text-gray-600">IT企業 プロジェクトマネージャー</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「短期集中プログラムを受講しました。自分の課題に合わせてカスタマイズされた内容で、
+                        3ヶ月という短期間で劇的な変化を実感できました。特にリーダーシップスタイルが大きく変わり、
+                        チームメンバーからの評価も向上しました。」
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" 
+                             alt="受講者の写真" 
+                             class="w-12 h-12 rounded-full mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-bold">中村 美香様</h4>
+                            <p class="text-sm text-gray-600">フリーランス コンサルタント</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-500 fill-current"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        「包括的成長プログラムでお世話になりました。半年間、継続的にサポートしていただき、
+                        コミュニケーション能力が格段に向上しました。クライアントとの関係性も良くなり、
+                        ビジネスの成果にも直結しています。投資以上の価値を感じています。」
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+                        よくある<span class="gradient-text">質問</span>
+                    </h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="font-bold text-lg">初回無料相談では何をしますか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform"></i>
+                        </div>
+                        <div class="faq-answer pt-4">
+                            <p class="text-gray-600">
+                                現在の状況、抱えている課題、達成したい目標について詳しくお聞きします。
+                                その上で、どのような支援が最適かを一緒に検討し、
+                                具体的な相談プランをご提案します。無理な勧誘は一切ありませんのでご安心ください。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="font-bold text-lg">オンラインでの相談は可能ですか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform"></i>
+                        </div>
+                        <div class="faq-answer pt-4">
+                            <p class="text-gray-600">
+                                はい、Zoom等のビデオ会議システムを使用したオンライン相談も承っております。
+                                対面での相談と同じ品質のサービスを提供できますので、
+                                遠方の方でも安心してご利用いただけます。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="font-bold text-lg">セミナーとの併用は可能ですか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform"></i>
+                        </div>
+                        <div class="faq-answer pt-4">
+                            <p class="text-gray-600">
+                                もちろん可能です。むしろ個人相談とセミナーを組み合わせることで、
+                                より効果的な学習が期待できます。個人相談プログラムには
+                                セミナー受講の割引特典も含まれております。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="faq-question flex justify-between items-center">
+                            <h3 class="font-bold text-lg">途中でプランの変更は可能ですか？</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform"></i>
+                        </div>
+                        <div class="faq-answer pt-4">
+                            <p class="text-gray-600">
+                                はい、学習の進捗や状況の変化に応じて、プランの調整は可能です。
+                                定期的に進捗を確認し、必要に応じてプログラムの内容や
+                                スケジュールを調整していきます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                まずは無料相談から始めませんか？
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                あなたの課題や目標について、じっくりとお話を聞かせてください。
+                最適な学習プランを一緒に考えましょう。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    無料相談を予約する
+                    <i data-lucide="calendar" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="testimonials.html" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                    お客様の声を見る
+                    <i data-lucide="star" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <span class="text-2xl font-bold">manaolapule</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        toiee Lab認定パートナーとして、Beyond Learningを実践する学習支援カンパニー
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">セミナー一覧</a></li>
+                        <li><a href="consultation.html" class="text-gray-400 hover:text-white">個人相談</a></li>
+                        <li><a href="https://toieelab.com" target="_blank" class="text-gray-400 hover:text-white">toiee Lab Online</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold mb-4">会社情報</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">私たちについて</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">実績・お客様の声</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">よくある質問</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@manaolapule.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>東京都渋谷区</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="copyright-year">2024</span> manaolapule. All rights reserved. | toiee Lab認定パートナー</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition z-40">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
